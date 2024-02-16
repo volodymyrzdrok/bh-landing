@@ -327,3 +327,53 @@ p {
     margin-bottom: 20px;
   }
 }
+
+.btn__to-form {
+  padding: 0 15px;
+  background-color: #fff;
+  width: 160px;
+  height: 40px;
+  position: absolute;
+  bottom: 14px;
+  z-index: 1;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  transform: translateX(120%);
+  font-size: 8px;
+}
+
+.btn__to-form:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+  box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px !important;
+}
+
+
+
+@media (min-width: 768px){
+  .btn__to-form {
+    padding: 0 45px;
+    width: 360px;
+    height: 80px;
+    bottom: 114px;
+    transform: translateX(120%);
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn__to-form {
+    bottom: 34px;
+    transform: translateX(160%);
+  }
+}
+
+
+@media (min-width: 1111px) {
+  .btn__to-form {
+    transform: translateX(210%);
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
