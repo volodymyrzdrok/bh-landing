@@ -30,6 +30,6 @@ $(function () {
                 });
             }
         },
-        preventInteractionOnTransition: false 
+    
     });
 });
