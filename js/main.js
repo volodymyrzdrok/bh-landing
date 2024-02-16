@@ -1,6 +1,7 @@
 
 
 import './localization.js';
+import './swiper.js';
 
 $(function () {
     $.ajax({
