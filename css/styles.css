@@ -182,8 +182,8 @@ p {
   text-transform: uppercase;
 }
 
-@media (min-width: 768px){
-  .banner__content{
+@media (min-width: 768px) {
+  .banner__content {
     padding-left: 70px !important;
   }
 }
@@ -262,7 +262,6 @@ p {
 }
 
 .swiper-slide__cont {
-  
   width: 220px;
   height: 171px;
   margin-left: 24px;
@@ -301,30 +300,30 @@ p {
 }
 
 .swiper-pagination-custom {
-  /* z-index: 1; */
+  height: 200px;
+  width: 30px;
+  position: absolute;
+  left: initial !important;
+  right: 0px;
   top: 30px;
-  gap: 15px;
-  padding-right: 24px;
-  display: flex;
-  align-items: end;
-  flex-direction: column;
 }
 
 .bullet-icon {
- cursor: pointer;
+  cursor: pointer;
   width: 15px;
   height: 15px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 768px) {
   .swiper-pagination-custom {
     top: 50px;
-    gap: 30px;
-    padding-right: 54px;
+    right: 54px;
   }
 
   .bullet-icon {
     width: 20px;
     height: 20px;
+    margin-bottom: 20px;
   }
 }
