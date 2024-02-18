@@ -1,6 +1,17 @@
+
+
+
+import "./localization.js";
 import "./swiper.js";
 import "./chart.js";
-import "./localization.js";
+
+
+
+
+
+
+
+
 
 $(function () {
   $.ajax({

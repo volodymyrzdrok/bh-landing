@@ -1,5 +1,6 @@
-const widthScreen = window.innerWidth;
 
+
+const widthScreen = window.innerWidth;
 let width, height, gradient;
 
 function getGradient(ctx, chartArea) {
@@ -38,7 +39,7 @@ const data = {
         }
         return getGradient(ctx, chartArea);
       },
-      borderWidth: widthScreen > 768 ? 6 : 3,
+      borderWidth: widthScreen > 768 ? 8 : 3,
       pointBackgroundColor: "#000",
       pointBorderColor: "#000",
       pointHoverBackgroundColor: "#000",
@@ -106,5 +107,19 @@ const config = {
     },
   },
 };
+ 
+
+
+var subtitleWidth = widthScreen > 768 ? 60 : 20;
+var chartWrapper = document.querySelector('.chart-wrapper');
+var windowWidth = chartWrapper.offsetWidth;
+var chartCont = document.querySelector('.myChart-cont');
+var chartWidth = windowWidth - subtitleWidth;
+chartCont.style.width = chartWidth + 'px';
+
 
 const myChart = new Chart(document.getElementById("myChart"), config);
+
+
+
+  

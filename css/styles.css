@@ -32,10 +32,10 @@ img {
 
 a {
   font-family: "Gotham Pro Regular";
-  text-decoration: none ;
+  text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
-  color: #000 ;
+  color: #000;
 }
 
 button {
@@ -340,7 +340,7 @@ p {
   border: 1px solid #000;
   transform: translateX(120%);
   font-size: 8px;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
 
 .btn__to-form:hover {
@@ -349,9 +349,7 @@ p {
   box-shadow: rgba(0, 0, 0, 0.276) 0px 16px 48px 0px !important;
 }
 
-
-
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .btn__to-form {
     padding: 0 45px;
     width: 360px;
@@ -370,7 +368,6 @@ p {
   }
 }
 
-
 @media (min-width: 1111px) {
   .btn__to-form {
     transform: translateX(210%);
@@ -382,16 +379,51 @@ p {
 /* ============= */
 
 
-/* .chart-container{
-  height: 200px ;
-}
-@media (min-width: 768px){
 
-  .chart-container{
-    height: 642px ;
+.chart__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.chart__title {
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 20px;
+}
+.chart-subtitle {
+  writing-mode: tb-rl;
+  transform: scale(-1);
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@media (max-width: 767px) {
+  .chart__container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-} */
-.chart-container{
-outline: 1px solid rgba(255, 165, 0,09);
-
 }
+
+@media (min-width: 768px) {
+  .chart__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .chart__title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .chart-subtitle {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .chart-subtitle {
+    font-size: 30px;
+    line-height: 60px;
+  }
+}
+
