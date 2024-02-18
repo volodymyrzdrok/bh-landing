@@ -1,3 +1,5 @@
+import { clients } from "./db/clients.js";
+
 const widthScreen = window.innerWidth;
 let width, height, gradient;
 
@@ -23,11 +25,10 @@ function getGradient(ctx, chartArea) {
 }
 
 const data = {
-  labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"],
+  labels: clients.years,
   datasets: [
     {
-      data: [17145, 35929, 47219, 131700, 132696, 243273, 340388, 451878],
-
+      data: clients.amount,
       borderColor: function (context) {
         const chart = context.chart;
         const { ctx, chartArea } = chart;
@@ -58,34 +59,6 @@ const config = {
       title: {
         display: false,
       },
-    },
-    interaction: {
-      intersect: false,
-    },
-    scales: {
-      x: {
-        border: {
-          width: 0,
-          color: "transparent",
-        },
-        display: true,
-        grid: {
-          display: false,
-        },
-        ticks: {
-          font: {
-            family: "Gotham Pro Medium",
-            size: widthScreen > 768 ? 30 : 12,
-          },
-          color: "#000",
-          padding: widthScreen < 992 ? 10 : 0,
-        },
-      },
-      y: {
-        display: false,
-      },
-    },
-    plugins: {
       legend: {
         display: false,
       },
@@ -103,44 +76,63 @@ const config = {
         displayColors: false,
       },
     },
+    interaction: {
+      intersect: false,
+    },
+    scales: {
+      x: {
+        border: {
+          width: 0,
+          color: "transparent",
+        },
+        display: true,
+        grid: {
+          display: false,
+        },
+        ticks: {
+          font: {
+            family: "Gotham Pro Medium",
+            size:  widthScreen > 921 ? 30 : (widthScreen > 768 ? 20 : 12),
+          },
+          color: "#000",
+          padding: widthScreen < 992 ? 10 : 0,
+        },
+      },
+      y: {
+        display: false,
+      },
+    },
   },
 };
 
-let myChart = null; 
+let myChart = null;
 
 function renderChart() {
-  var subtitleWidth = widthScreen > 768 ? 60 : 20;
-  var chartWrapper = $('.chart-wrapper');
-  var windowWidth = chartWrapper.width();
-  var chartCont = $('.myChart-cont');
-  var chartWidth = windowWidth - subtitleWidth;
+  const subtitleWidth = widthScreen > 768 ? 60 : 20;
+  const chartWrapper = $('.chart-wrapper');
+  const windowWidth = chartWrapper.width();
+  const chartCont = $('.myChart-cont');
+  const chartWidth = windowWidth - subtitleWidth;
   chartCont.css('width', chartWidth + 'px');
 
   if (myChart) {
     myChart.destroy();
   }
 
-  
   myChart = new Chart($('#myChart'), config);
 }
 
+let firstScrollToFooter = true;
 
-
-let firstScrollToFooter = true; 
-
-
-$(window).scroll(function() {
-  var footer = $('footer');
-  var footerPosition = footer.offset().top;
+$(window).scroll(function () {
+  const footer = $('footer');
+  const footerPosition = footer.offset().top;
   if (firstScrollToFooter && footerPosition < $(window).scrollTop() + $(window).height()) {
     renderChart();
-    firstScrollToFooter = false; 
+    firstScrollToFooter = false;
   }
 });
 
-$(window).on('orientationchange', function() {
+$(window).on('orientationchange', function () {
   renderChart();
 });
-// $(window).resize(function() {
-//   renderChart();
-// });
