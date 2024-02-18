@@ -1,3 +1,5 @@
+const widthScreen = window.innerWidth;
+
 let width, height, gradient;
 
 function getGradient(ctx, chartArea) {
@@ -36,7 +38,7 @@ const data = {
         }
         return getGradient(ctx, chartArea);
       },
-      borderWidth: 5,
+      borderWidth:widthScreen > 768 ?  6 : 3,
       // fill: false,
       // cubicInterpolationMode: "monotone",
       tension: 0.4,
@@ -45,7 +47,7 @@ const data = {
       pointBorderColor: "#000",
       pointHoverBackgroundColor: "#000",
       pointHoverBorderColor: "#000",
-      pointRadius: 7,
+      pointRadius: widthScreen > 768 ?  7 : 4,
     },
   ],
 };
@@ -65,25 +67,26 @@ const config = {
     },
     scales: {
       x: {
+    
         display: true,
         grid: {
           display: false,
         },
-        title: {
-          display: true,
+        ticks: {
+          font: {
+            family: "Gotham Pro Medium", 
+            size: widthScreen > 768 ?  30 : 12, 
+      
+          },
+          color: '#000',
+          padding: widthScreen < 992 ?  10 : 0,
         },
+        axis: {
+          color: 'red' // Колір вісі x
+        }
       },
       y: {
-        display: true,
-        grid: {
-          display: false,
-        },
-        title: {
-          display: true,
-          text: "Кількість гостей Black Honey",
-        },
-        suggestedMin: 0,
-        suggestedMax: 100,
+        display: false,
       },
     },
     plugins: {
