@@ -1,5 +1,3 @@
-
-
 const widthScreen = window.innerWidth;
 let width, height, gradient;
 
@@ -107,19 +105,42 @@ const config = {
     },
   },
 };
- 
 
+let myChart = null; 
 
-var subtitleWidth = widthScreen > 768 ? 60 : 20;
-var chartWrapper = document.querySelector('.chart-wrapper');
-var windowWidth = chartWrapper.offsetWidth;
-var chartCont = document.querySelector('.myChart-cont');
-var chartWidth = windowWidth - subtitleWidth;
-chartCont.style.width = chartWidth + 'px';
+function renderChart() {
+  var subtitleWidth = widthScreen > 768 ? 60 : 20;
+  var chartWrapper = $('.chart-wrapper');
+  var windowWidth = chartWrapper.width();
+  var chartCont = $('.myChart-cont');
+  var chartWidth = windowWidth - subtitleWidth;
+  chartCont.css('width', chartWidth + 'px');
 
-
-const myChart = new Chart(document.getElementById("myChart"), config);
-
-
+  if (myChart) {
+    myChart.destroy();
+  }
 
   
+  myChart = new Chart($('#myChart'), config);
+}
+
+
+
+let firstScrollToFooter = true; 
+
+
+$(window).scroll(function() {
+  var footer = $('footer');
+  var footerPosition = footer.offset().top;
+  if (firstScrollToFooter && footerPosition < $(window).scrollTop() + $(window).height()) {
+    renderChart();
+    firstScrollToFooter = false; 
+  }
+});
+
+$(window).on('orientationchange', function() {
+  renderChart();
+});
+// $(window).resize(function() {
+//   renderChart();
+// });
