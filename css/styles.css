@@ -52,7 +52,6 @@ p {
   margin: 0;
 }
 
-
 @media (min-width: 768px) and (max-width: 991px) {
 }
 
@@ -379,8 +378,6 @@ p {
 
 /* ============= */
 
-
-
 .chart__container {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -428,5 +425,143 @@ p {
   }
 }
 
-
 /* ========= */
+.location__container {
+  max-width: 320px;
+  padding: 36px 0;
+}
+.location__title {
+  width: 200px;
+  margin: 0px auto 8px auto;
+}
+.location__description {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+@media (min-width: 768px) {
+  .location__container {
+    padding: 123px 0 110px 0;
+    max-width: 950px;
+  }
+  .location__title {
+    width: 700px;
+    margin: 0px auto 18px auto;
+  }
+  .location__description {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+.location__list {
+  padding: 30px 0;
+}
+.location__item {
+  cursor: pointer;
+}
+
+.location__name {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.location__pin {
+  width: 20px;
+  transform: translateY(-23%);
+}
+
+@media (min-width: 768px) {
+  .location__list {
+    padding: 60px 0 90px 0;
+  }
+
+  .location__name {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .location__pin {
+    width: 70px;
+  }
+}
+.location__cup {
+  width: 30px;
+}
+
+.cups-cont {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+@media (min-width: 768px) {
+  .cups-cont {
+    gap: 70px;
+  }
+  .location__cup {
+    width: 80px;
+  }
+}
+
+@media (min-width: 922px) {
+  .cups-cont {
+    gap: 130px;
+  }
+  .location__cup {
+    width: 150px;
+  }
+}
+
+
+
+
+
+.location__cup:nth-child(1) {
+  transform: translateY(-20px) rotate(-17deg);
+  animation: pendulum-1 1.3s ease-in-out infinite;
+}
+
+.location__cup:nth-child(2) {
+  transform: translateY(10px) rotate(-5deg);
+  animation: pendulum-2 2s ease-in-out infinite;
+}
+
+.location__cup:nth-child(3) {
+  transform: translateY(30px) rotate(20deg);
+  animation: pendulum-3 1.7s ease-in-out infinite;
+}
+
+@keyframes pendulum-1 {
+  0% {
+    transform: translateY(-20px) rotate(-17deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(-32deg);
+  }
+  100% {
+    transform: translateY(-20px) rotate(-17deg);
+  }
+}
+
+@keyframes pendulum-2 {
+  0% {
+    transform: translateY(10px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(-20deg);
+  }
+  100% {
+    transform: translateY(10px) rotate(-5deg);
+  }
+}
+
+@keyframes pendulum-3 {
+  0% {
+    transform: translateY(30px) rotate(29deg);
+  }
+  50% {
+    transform: translateY(30px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(30px) rotate(29deg);
+  }
+}
