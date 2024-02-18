@@ -38,16 +38,14 @@ const data = {
         }
         return getGradient(ctx, chartArea);
       },
-      borderWidth:widthScreen > 768 ?  6 : 3,
-      // fill: false,
-      // cubicInterpolationMode: "monotone",
-      tension: 0.4,
-
+      borderWidth: widthScreen > 768 ? 6 : 3,
       pointBackgroundColor: "#000",
       pointBorderColor: "#000",
       pointHoverBackgroundColor: "#000",
       pointHoverBorderColor: "#000",
-      pointRadius: widthScreen > 768 ?  7 : 4,
+      pointRadius: widthScreen > 768 ? 6 : 3,
+      pointHoverBorderWidth: widthScreen > 768 ? 5 : 2,
+      lineTension: 0.4,
     },
   ],
 };
@@ -67,23 +65,22 @@ const config = {
     },
     scales: {
       x: {
-    
+        border: {
+          width: 0,
+          color: "transparent",
+        },
         display: true,
         grid: {
           display: false,
         },
         ticks: {
           font: {
-            family: "Gotham Pro Medium", 
-            size: widthScreen > 768 ?  30 : 12, 
-      
+            family: "Gotham Pro Medium",
+            size: widthScreen > 768 ? 30 : 12,
           },
-          color: '#000',
-          padding: widthScreen < 992 ?  10 : 0,
+          color: "#000",
+          padding: widthScreen < 992 ? 10 : 0,
         },
-        axis: {
-          color: 'red' // Колір вісі x
-        }
       },
       y: {
         display: false,
@@ -92,6 +89,19 @@ const config = {
     plugins: {
       legend: {
         display: false,
+      },
+      tooltip: {
+        enabled: true,
+        backgroundColor: "rgba(0, 0, 0, 0.8)",
+        titleFont: {
+          family: "Gotham Pro Medium",
+          size: widthScreen > 768 ? 12 : 8,
+        },
+        bodyFont: {
+          family: "Gotham Pro Medium",
+          size: widthScreen > 768 ? 20 : 15,
+        },
+        displayColors: false,
       },
     },
   },
