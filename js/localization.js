@@ -1,3 +1,6 @@
+
+import { updateContent } from "./utils/updateLocalization.js";
+
 $(function () {
   const $languageLink = $('.language-link');
   let language = localStorage.getItem('language') || 'ua';
@@ -19,7 +22,7 @@ $(function () {
       },
     });
 
-    updateContent();
+    updateContent()
   }
 
   async function loadTranslations(lng) {
@@ -27,10 +30,5 @@ $(function () {
     return await response.json()
   }
 
-  function updateContent() {
-    $('[data-i18n]').each(function () {
-      const key = $(this).data('i18n');
-      $(this).html(i18next.t(key));
-    });
-  }
+  
 });
