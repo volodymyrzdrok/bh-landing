@@ -16,7 +16,7 @@ $(document).ready(function() {
         animateCup(currentCup);
   
         currentIndex = (currentIndex + 1) % cups.length;
-      }, 5 * 1000); 
+      }, 7 * 1000); 
     }
   
     startAnimation();

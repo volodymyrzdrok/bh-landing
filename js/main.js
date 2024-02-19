@@ -1,6 +1,6 @@
 
 
-
+import './render-locations.js'
 import "./localization.js";
 import "./swiper.js";
 import "./chart.js";
