@@ -515,30 +515,30 @@ p {
 
 
 
-.location__cup:nth-child(1) {
-  transform: translateY(-20px) rotate(-17deg);
-  animation: pendulum-1 1.3s ease-in-out infinite;
+.cups-dance-1 {
+  transform: translateY(10px) rotate(-17deg);
+  animation: pendulum-1 2s ease-in-out infinite;
 }
 
-.location__cup:nth-child(2) {
-  transform: translateY(10px) rotate(-5deg);
+.cups-dance-2 {
+  transform: translateY(20px) rotate(-35deg);
   animation: pendulum-2 2s ease-in-out infinite;
 }
 
-.location__cup:nth-child(3) {
-  transform: translateY(30px) rotate(20deg);
-  animation: pendulum-3 1.7s ease-in-out infinite;
+.cups-dance-3 {
+  transform: translateY(-18px) rotate(20deg);
+  animation: pendulum-3 2s ease-in-out infinite;
 }
 
 @keyframes pendulum-1 {
   0% {
-    transform: translateY(-20px) rotate(-17deg);
+    transform: translateY(10px) rotate(-17deg);
   }
   50% {
-    transform: translateY(-20px) rotate(-32deg);
+    transform: translateY(10px) rotate(-32deg);
   }
   100% {
-    transform: translateY(-20px) rotate(-17deg);
+    transform: translateY(10px) rotate(-17deg);
   }
 }
 
@@ -556,12 +556,20 @@ p {
 
 @keyframes pendulum-3 {
   0% {
-    transform: translateY(30px) rotate(29deg);
+    transform: translateY(0px) rotate(20deg);
   }
   50% {
-    transform: translateY(30px) rotate(5deg);
+    transform: translateY(0px) rotate(-5deg);
   }
   100% {
-    transform: translateY(30px) rotate(29deg);
+    transform: translateY(0px) rotate(20deg);
   }
+}
+
+
+.animate__hinge {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce 10s; 
 }

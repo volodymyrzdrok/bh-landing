@@ -122,14 +122,14 @@ function renderChart() {
   myChart = new Chart($('#myChart'), config);
 }
 
-let firstScrollToFooter = true;
+let firstScrollToContUnderChart = true;
 
 $(window).scroll(function () {
-  const footer = $('footer');
-  const footerPosition = footer.offset().top;
-  if (firstScrollToFooter && footerPosition < $(window).scrollTop() + $(window).height()) {
+  const contUnderChart = $('.location__container');
+  const contUnderChartPosition = contUnderChart.offset().top;
+  if (firstScrollToContUnderChart && contUnderChartPosition < $(window).scrollTop() + $(window).height()) {
     renderChart();
-    firstScrollToFooter = false;
+    firstScrollToContUnderChart = false;
   }
 });
 

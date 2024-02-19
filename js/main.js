@@ -4,7 +4,7 @@
 import "./localization.js";
 import "./swiper.js";
 import "./chart.js";
-
+import "./animations.js"
 
 
 
