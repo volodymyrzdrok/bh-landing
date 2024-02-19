@@ -35,15 +35,15 @@ $(document).ready(function () {
 
 
 
-  $(".location-item:first").addClass('active');
-  $(".location-content p:first").show();
+  $(".locModal-name__item:first").addClass('active');
+  $(".locModal-content__item:first").show();
 
 
-  $(".location-item").hover(function(){
+  $(".locModal-name__item").hover(function(){
     var targetId = $(this).data("target");
-    $(".location-content p").hide();
-    $(".location-content p[data-id='" + targetId + "']").show();
-    $(".location-item").removeClass("active");
+    $(".locModal-content__item").hide();
+    $(".locModal-content__item[data-id='" + targetId + "']").show();
+    $(".locModal-name__item").removeClass("active");
     $(this).addClass("active");
   });
  

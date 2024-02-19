@@ -629,9 +629,9 @@ p {
 
 
 /* ==================================== */
-.location-content p {
+.locModal-content__item {
   display: none;
 }
-.location-item.active {
+.locModal-name__item.active {
   font-family: "Gotham Pro Medium";
 }
