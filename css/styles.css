@@ -55,8 +55,10 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
 }
 
-/* .color-grey {
-  color: #828282 !important;
+/* .modal-open-noscroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
 } */
 
 .fw-m {
@@ -451,14 +453,13 @@ p {
   .location__description {
     font-size: 40px;
     line-height: 45px;
-   
   }
 }
 .location__list {
   padding: 30px 0;
 }
 .location__item {
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .location__name {
@@ -469,22 +470,20 @@ p {
 }
 
 .location__name::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
-  bottom: -3px; 
+  bottom: -3px;
   width: 0;
   height: 2px;
-  background-color: white; 
-  transition: width 0.3s ease; 
+  background-color: white;
+  transition: width 0.3s ease;
 }
 
 .location__item:hover .location__name:hover::after {
-  width: 100%; 
+  width: 100%;
   transition-delay: 0.1s;
 }
-
-
 
 .location__pin {
   width: 20px;
@@ -530,10 +529,6 @@ p {
     width: 150px;
   }
 }
-
-
-
-
 
 .cups-dance-1 {
   transform: translateY(10px) rotate(-17deg);
@@ -586,12 +581,57 @@ p {
   }
 }
 
-
 .animate__hinge {
   display: inline-block;
   margin: 0 0.5rem;
 
-  animation: bounce 10s; 
+  animation: bounce 10s;
 }
 
 /* ==================================== */
+/* modal  */
+
+/* #locationModal .btn-close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+ 
+}
+
+#locationModal .modal-dialog {
+  min-width: 100vw;
+  min-height: 90vh;
+}
+
+@media (min-width: 768px) {
+  #locationModal .modal-dialog {
+    min-width: 576px;
+  }
+}
+
+@media (min-width: 922px) {
+  #locationModal .modal-dialog {
+    min-width: 876px;
+    
+  }
+} */
+
+#locationModal .modal-content{
+  /* display: flex;
+  justify-content: center; */
+}
+@media (min-width: 922px) {
+  /* #locationModal .modal-content {
+    min-width: 876px;
+    
+  } */
+} 
+
+
+/* ==================================== */
+.location-content p {
+  display: none;
+}
+.location-item.active {
+  font-family: "Gotham Pro Medium";
+}

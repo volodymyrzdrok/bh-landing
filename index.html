@@ -18,7 +18,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
       $(function () {
@@ -145,15 +151,24 @@
               alt="logo"
             />
             <p class="location__description text-white" data-i18n="in_city"></p>
-            <ul class="location__list" >
-              
-            </ul>
-<div class="cups-cont">
-  <img src="images/cup.svg" class="location__cup cups-dance-1 " alt="pin" />
-  <img src="images/cup.svg" class="location__cup cups-dance-2" alt="pin" />
-  <img src="images/cup.svg" class="location__cup cups-dance-3" alt="pin" />
-</div>
-
+            <ul class="location__list"></ul>
+            <div class="cups-cont">
+              <img
+                src="images/cup.svg"
+                class="location__cup cups-dance-1"
+                alt="pin"
+              />
+              <img
+                src="images/cup.svg"
+                class="location__cup cups-dance-2"
+                alt="pin"
+              />
+              <img
+                src="images/cup.svg"
+                class="location__cup cups-dance-3"
+                alt="pin"
+              />
+            </div>
           </div>
         </div>
 
@@ -161,5 +176,40 @@
       </section>
     </main>
     <footer></footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="locationModal"
+      tabindex="-1"
+      aria-labelledby="locationModal"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-md"
+        style="max-width: 876px"
+      >
+        <div class="modal-content rounded-0">
+          <div class="" id="locations-modal__container">
+            <div class="row">
+              <div class="col-4">
+                <p class="location-item" data-target="1">Location1</p>
+                <p class="location-item" data-target="2">Location2</p>
+                <p class="location-item" data-target="3">Location3</p>
+              </div>
+              <div class="col-8">
+                <div class="location-content">
+                  <p data-id="1">text for Location1</p>
+                  <p data-id="2">text for Location2</p>
+                  <p data-id="3">text for Location3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
   </body>
 </html>
