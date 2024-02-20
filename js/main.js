@@ -1,17 +1,9 @@
-
-
-import './render-locations.js'
+import "./render-locations.js";
+import "./questions-block.js";
 import "./localization.js";
 import "./swiper.js";
 import "./chart.js";
-import "./animations.js"
-
-
-
-
-
-
-
+import "./animations.js";
 
 $(function () {
   $.ajax({
