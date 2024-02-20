@@ -73,12 +73,11 @@ p {
 .fs-10 {
   font-size: 10px;
 }
-/* .fs-14 {
-  font-size: 14px;
-} */
-/* .fs-48 {
-  font-size: 48px;
-} */
+
+/* @import url('reset.css');
+@import url('modal.css'); */
+
+
 
 .fs-nav-link {
   font-size: 18px;
@@ -346,9 +345,10 @@ p {
 }
 
 .btn__to-form:hover {
-  background-color: #fff;
-  border: 1px solid #000;
-  box-shadow: rgba(0, 0, 0, 0.276) 0px 16px 48px 0px !important;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  box-shadow: rgba(255, 255, 255, 0.276) 0px 16px 48px 0px !important;
 }
 
 @media (min-width: 768px) {
@@ -588,49 +588,47 @@ p {
   animation: bounce 10s;
 }
 
-/* ==================================== */
-/* modal  */
 
-/* #locationModal .btn-close {
-  position: absolute;
-  top: 25px;
-  right: 25px;
- 
-}
-
-#locationModal .modal-dialog {
-  min-width: 100vw;
-  min-height: 90vh;
-}
-
-@media (min-width: 768px) {
-  #locationModal .modal-dialog {
-    min-width: 576px;
-  }
-}
-
-@media (min-width: 922px) {
-  #locationModal .modal-dialog {
-    min-width: 876px;
-    
-  }
-} */
-
-#locationModal .modal-content {
-  /* display: flex;
-  justify-content: center; */
-}
-@media (min-width: 922px) {
-  /* #locationModal .modal-content {
-    min-width: 876px;
-    
-  } */
-}
 
 /* ==================================== */
 .locModal-content__item {
   display: none;
 }
+
+
+.locModal-name__item {
+  display: inline-block;
+  font-size: 11px;
+  line-height: 14px;
+  margin-bottom: 13px;
+  position: relative; 
+  text-transform: initial;
+}
+
+
+.locModal-name__item:hover {
+ cursor: pointer;
+ 
+}
+.locModal-name__item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.1px;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.locModal-name__item:hover::after {
+  width: 100%;
+  transition-delay: 0.1s;
+}
+
+
+
+
 .locModal-name__item.active {
   font-family: "Gotham Pro Medium";
 }
@@ -641,11 +639,6 @@ p {
   line-height: 20px;
 }
 
-.locModal-name__item {
-  font-size: 11px;
-  line-height: 14px;
-  margin-bottom: 13px;
-}
 
 @media (min-width: 768px) {
   .locModal__title {
