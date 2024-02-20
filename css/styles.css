@@ -896,6 +896,7 @@ p {
   margin-bottom: 13px;
 }
 .question__item {
+  cursor: pointer;
   padding: 11px 11px 11px 30px;
   font-size: 14px;
   line-height: 16px;
