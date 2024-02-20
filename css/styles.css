@@ -18,7 +18,9 @@ body {
   font-family: "Gotham Pro Regular";
   color: #000;
 }
-
+.www {
+  outline: 1px solid orange !important;
+}
 ul {
   padding: 0;
   margin: 0;
@@ -76,8 +78,6 @@ p {
 
 /* @import url('reset.css');
 @import url('modal.css'); */
-
-
 
 .fs-nav-link {
   font-size: 18px;
@@ -263,15 +263,15 @@ p {
 }
 
 .swiper-slide__cont {
-  width: 220px;
+  width: 280px;
   height: 171px;
   margin-left: 24px;
   padding: 8px;
   background-color: #fff;
 }
 .swiper-slide__cont p {
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -335,11 +335,11 @@ p {
   width: 160px;
   height: 40px;
   position: absolute;
-  bottom: 14px;
+  bottom: 12px;
   z-index: 1;
   text-transform: uppercase;
   border: 1px solid #000;
-  transform: translateX(120%);
+  transform: translateX(145%);
   font-size: 8px;
   transition: all 0.3s ease;
 }
@@ -588,27 +588,22 @@ p {
   animation: bounce 10s;
 }
 
-
-
 /* ==================================== */
 .locModal-content__item {
   display: none;
 }
-
 
 .locModal-name__item {
   display: inline-block;
   font-size: 11px;
   line-height: 14px;
   margin-bottom: 13px;
-  position: relative; 
+  position: relative;
   text-transform: initial;
 }
 
-
 .locModal-name__item:hover {
- cursor: pointer;
- 
+  cursor: pointer;
 }
 .locModal-name__item::after {
   content: "";
@@ -626,9 +621,6 @@ p {
   transition-delay: 0.1s;
 }
 
-
-
-
 .locModal-name__item.active {
   font-family: "Gotham Pro Medium";
 }
@@ -638,7 +630,6 @@ p {
   font-size: 14px;
   line-height: 20px;
 }
-
 
 @media (min-width: 768px) {
   .locModal__title {
@@ -652,27 +643,197 @@ p {
   }
 }
 
-.locModal__btn-close{
+.locModal__btn-close {
   position: absolute;
   width: 34px;
   height: 34px;
   top: 24px;
   right: 24px;
-  background-color: transparent;;
+  background-color: transparent;
 }
 
 .locModal__btn-close::before,
 .locModal__btn-close::after {
   position: absolute;
-    content: '';
-    width: 20px;
-    height: 2px;
-    background-color: #fff;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
 }
 
 .locModal__btn-close::after {
-    transform: rotatez(45deg);
+  transform: rotatez(45deg);
 }
 .locModal__btn-close::before {
   transform: rotate(-45deg);
+}
+
+/* franchise */
+
+.franchise-title__container {
+  padding: 36px 0;
+}
+.franchise-title {
+  font-size: 20px;
+  line-height: 10px;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+.franchise-title__logo {
+  width: 200px;
+  margin: 0px auto 8px auto;
+}
+.franchise-title__description {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+@media (min-width: 768px) {
+  .franchise-title__container {
+    padding: 110px 0;
+  }
+  .franchise-title {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 29px;
+  }
+
+  .franchise-title__logo {
+    width: 700px;
+    margin: 0px auto 18px auto;
+  }
+  .franchise-title__description {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+@media (min-width: 992px) {
+  .franchise-title {
+    font-size: 70px;
+    line-height: 90px;
+    margin-bottom: 29px;
+  }
+}
+
+/* ////============ */
+
+.about_franchise {
+  
+}
+
+.about_franchise__title--number {
+  font-size: 30px;
+  line-height: 15px;
+  margin-right: 10px;
+}
+.about_franchise__title--number-squere {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+}
+.about_franchise__title {
+  font-size: 15px;
+  line-height: 15px;
+  text-transform: uppercase;
+  transform: translateY(12%);
+
+}
+
+
+@media (min-width: 768px) {
+  .about_franchise {
+
+  }
+
+  .about_franchise__title--number {
+    font-size: 100px;
+    line-height: 50px;
+    margin-right: 24px;
+  }
+  .about_franchise__title--number-squere {
+    width: 22px;
+    height: 22px;
+  }
+  .about_franchise__title {
+    font-size: 40px;
+    line-height: 50px;
+    
+  }
+}
+
+@media (min-width: 922px) {
+  .about_franchise {
+  }
+
+  .about_franchise__title--number {
+    font-size: 150px;
+    line-height: 70px;
+  }
+  .about_franchise__title--number-squere {
+    width: 32px;
+    height: 32px;
+  }
+  .about_franchise__title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+
+
+
+
+.franch-supp__item{
+  color: #fff;
+  font-size: 12px;
+line-height: 14px;
+position: relative;
+}
+
+.franch-supp__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+
+
+.fr-line::before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px; 
+  width: 7px;
+  height: 2px; 
+  background-color: #fff; 
+}
+
+
+
+
+
+@media (min-width: 768px) {
+
+  .franch-supp__item{
+    color: #fff;
+    font-size: 30px;
+  line-height: 35px;
+  }
+  .franch-supp__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+
+
+
+
+.fr-line::before{
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -23px; 
+  width: 20px;
+  height: 3px; 
+
+}
+
 }
