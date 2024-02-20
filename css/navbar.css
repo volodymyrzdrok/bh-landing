@@ -1,0 +1,36 @@
+.fs-nav-link {
+  font-size: 18px;
+  font-family: "Gotham Pro Medium";
+  font-weight: normal;
+}
+
+.logo_main {
+  width: 150px;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    height: 110px;
+  }
+  .fs-nav-link {
+    font-size: 12px;
+  }
+  .logo_main {
+    width: 300px;
+  }
+}
+
+/* footer */
+
+@media (max-width: 575px) {
+  .column-mob {
+    writing-mode: tb-rl;
+    transform: scale(-1);
+    white-space: nowrap;
+  }
+}
+@media (min-width: 576px) {
+  .footer-cont {
+    min-height: 200px;
+  }
+}

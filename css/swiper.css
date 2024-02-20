@@ -1,0 +1,147 @@
+.about-swipe__container {
+  width: 100%;
+  height: 220px;
+}
+
+@media (min-width: 768px) {
+  .about-swipe__container {
+    height: 760px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.about-swipe__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 130%;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.04),
+      rgba(47, 48, 58, 0.04)
+    ),
+    url("../images/about-swipe-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide__cont {
+  width: 280px;
+  height: 171px;
+  margin-left: 24px;
+  padding: 8px;
+  background-color: #fff;
+}
+.swiper-slide__cont p {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .swiper-slide__cont {
+    width: 490px;
+    height: 440px;
+    padding: 20px;
+    margin-left: 44px;
+  }
+  .swiper-slide__cont p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .swiper-slide__cont {
+    width: 770px;
+    height: 640px;
+    padding: 30px;
+    margin-left: 70px;
+  }
+  .swiper-slide__cont p {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+.swiper-pagination-custom {
+  height: 200px;
+  width: 30px;
+  position: absolute;
+  left: initial !important;
+  right: 0px;
+  top: 30px;
+}
+
+.bullet-icon {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .swiper-pagination-custom {
+    top: 50px;
+    right: 54px;
+  }
+
+  .bullet-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.btn__to-form {
+  padding: 0 15px;
+  background-color: #fff;
+  width: 160px;
+  height: 40px;
+  position: absolute;
+  bottom: 8px;
+  z-index: 1;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  transform: translateX(130%);
+  font-size: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn__to-form:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  box-shadow: rgba(255, 255, 255, 0.276) 0px 16px 48px 0px !important;
+}
+
+@media (min-width: 768px) {
+  .btn__to-form {
+    padding: 0 45px;
+    width: 360px;
+    height: 80px;
+    bottom: 114px;
+    transform: translateX(120%);
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn__to-form {
+    bottom: 34px;
+    transform: translateX(160%);
+  }
+}
+
+@media (min-width: 1111px) {
+  .btn__to-form {
+    transform: translateX(210%);
+    font-size: 18px;
+    line-height: 25px;
+  }
+}

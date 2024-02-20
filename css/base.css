@@ -1,0 +1,67 @@
+body {
+  font-size: 14px;
+  font-family: "Gotham Pro Regular";
+  color: #000;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  font-family: "Gotham Pro Regular";
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #000;
+}
+
+button {
+  font-size: 14px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.fw-m {
+  font-family: "Gotham Pro Medium";
+  font-weight: normal;
+}
+.fw-b {
+  font-family: "Gotham Pro Bold";
+  font-weight: bold;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.main-gradient {
+  width: 100%;
+  height: 22px;
+  background: linear-gradient(
+    90deg,
+    #f39200 0%,
+    #f4a90c 20%,
+    #f7d01f 48%,
+    #6d100a 100%
+  );
+}
+@media (min-width: 992px) {
+  .main-gradient {
+    height: 60px;
+  }
+}
