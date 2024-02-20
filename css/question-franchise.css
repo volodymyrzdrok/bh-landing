@@ -72,10 +72,10 @@
   .question__item {
     padding: 12px 12px 12px 40px;
     font-size: 30px;
-    line-height: 52px;
+    line-height: 36px;
   }
   .question__item::before {
-    top: 35px;
+    top: 27px;
     left: 11px;
     width: 20px;
     height: 3px;
