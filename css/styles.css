@@ -897,7 +897,7 @@ p {
 }
 .question__item {
   cursor: pointer;
-  padding: 11px 11px 11px 30px;
+  padding: 11px 11px 11px 36px;
   font-size: 14px;
   line-height: 16px;
   position: relative;
@@ -906,14 +906,14 @@ p {
   content: "";
   position: absolute;
   top: 17px;
-  left: 14px;
+  left: 24px;
   width: 7px;
   height: 2px;
   background-color: #fff;
 }
 .answer__item {
   display: none;
-  padding: 12px 12px 0px 12px;
+  padding: 12px 12px 0px 24px;
   font-size: 13px;
   line-height: 15px;
 }
@@ -941,6 +941,7 @@ p {
   height: 2px;
   background-color: #f60a0a;
 }
+
 @media (min-width: 768px) {
   .question__block {
     margin-bottom: 30px;
