@@ -6,7 +6,7 @@ export const locations = [
       { id: "1", name: "kryva", url: "yx47wJkcvmGq7Sgs9" },
       { id: "2", name: "shota", url: "pWTSVXuwet2oavHVA" },
       { id: "3", name: "galytska", url: "kcy3TF3xdAD2845b6" },
-      { id: "4", name: "shevchenka", url: "NYvT8AV4sPb9i3Ek6" },
+      { id: "4", name: "shevchenka", url: "tetG7jjM64GFCNpw9" },
       { id: "5", name: "laz", url: "n3Tm1dKgj6JWqVw96" },
       { id: "6", name: "british", url: "EjgsQhMYnDJyii7e9" },
       { id: "7", name: "parus", url: "gqv7QmbbK2hkUG8F7" },
