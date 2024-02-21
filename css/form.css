@@ -1,0 +1,40 @@
+.star {
+  color: red;
+}
+
+.form-control:focus {
+  border-color: rgba(244, 169, 12, 0.2);
+  box-shadow: 0 0 0 0.1rem rgba(243, 146, 0, 0.5);
+}
+.flatpickr-day.selected {
+  border-color: rgba(244, 169, 12, 0.9) !important;
+  background: rgba(244, 169, 12, 0.9) !important;
+}
+
+.select2-container .select2-selection--single {
+  height: 58px !important;
+  width: 100%;
+  position: relative;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  line-height: 58px !important;
+  text-align: initial !important;
+}
+
+.select2-selection__arrow {
+  top: 16px !important;
+  right: 10px !important;
+}
+.select2-container--default
+  .select2-results__option--highlighted[aria-selected] {
+  background-color: rgba(244, 169, 12, 0.9) !important;
+  /* color: #000 !important; */
+}
+.select2-container--default .select2-selection--single {
+  border: 1px solid rgb(222, 226, 230) !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #000 !important;
+}
