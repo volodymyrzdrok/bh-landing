@@ -89,15 +89,17 @@
   ,"city_plan":"В якому місті плануєте відкрити Black Honey: <span class='star'>*</span>"
   ,"initial_capital":"Розмір початкового капіталу (інвестиція в проект): <span class='star'>*</span>"
   ,"source_of_investment":"Джерело інвестування?"
-  
-  ,"role_in_bisiness":"Роль в бізнесі?",
 
+  ,"role_in_bisiness":"Роль в бізнесі?",
   "investor":"Інвестор",
   "investor_manager":"Інвестор і Управлінець",
   "manager":"Управлінець"
 
   ,"share_in_bisiness":"Частка в бізнесі? <span class='star'>*</span>"
+
   ,"form_ownership_place":"Планована форма власності на приміщення? <span class='star'>*</span>"
+  ,"own":"Власне","rent":"Оренда"
+  
   ,"working":"На даний час ви працюєте? <span class='star'>*</span>"
   ,"experiance":"У яких сферах ви працювали? Який ваш досвід керування проектами/командами?"
   ,"experiance_franchise":"Чи є у вас досвід в франчайзингу? <span class='star'>*</span>"

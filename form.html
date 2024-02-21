@@ -133,21 +133,39 @@
             ></label>
           </div>
 
-         
-          <div class="select__container"> <select
-            class="select2 mb-3 w-100"
-            style="min-height: 90px !important"
-            data-i18n="role_in_bisiness"
-           
-          >
-            <option value=""></option>
-            <option data-i18n="investor" value="Інвестор"></option>
-            <option
-              data-i18n="investor_manager"
-              value="Інвестор і Управлінець"
-            ></option>
-            <option data-i18n="manager" value="Управлінець"></option>
-          </select></div>
+          <div class="select__container mb-3">
+            <select class="select2  w-100" data-i18n="role_in_bisiness">
+              <option value=""></option>
+              <option data-i18n="investor" value="Інвестор"></option>
+              <option
+                data-i18n="investor_manager"
+                value="Інвестор і Управлінець"
+              ></option>
+              <option data-i18n="manager" value="Управлінець"></option>
+            </select>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="share_in_bisiness"
+              placeholder=""
+            />
+            <label
+              for="share_in_bisiness"
+              data-i18n="share_in_bisiness"
+            ></label>
+          </div>
+
+          <div class="select__container mb-3">
+            <select class="select2 w-100" data-i18n="form_ownership_place">
+              <option value=""></option>
+
+              <option data-i18n="rent" value="Оренда"></option>
+              <option data-i18n="own" value="Власне"></option>
+            </select>
+          </div>
         </form>
       </section>
     </main>

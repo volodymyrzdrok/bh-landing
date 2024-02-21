@@ -35,9 +35,13 @@
   border: 1px solid rgb(222, 226, 230) !important;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__placeholder {
-    color: #000 !important;
-}
+
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #000 !important;
+}
+@media (min-width: 768px) {
+    .select2-container--default .select2-selection--single .select2-selection__placeholder {
+        color: #000 !important;
+    }
+    
 }

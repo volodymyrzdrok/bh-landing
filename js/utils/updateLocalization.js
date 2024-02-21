@@ -6,14 +6,14 @@ export function updateContent() {
     if (tagName === "select") {
       $(this).attr("data-placeholder", i18next.t(key));
 
-      $(".select2").select2({
+      $(this).select2({
         minimumResultsForSearch: -1,
       });
 
       $(this)
         .parents(".select__container")
         .find(".select2-selection__placeholder")
-        .text(i18next.t(key));
+        .html(i18next.t(key));
     } else if (tagName === "option") {
       $(this).text(i18next.t(key));
     } else {
