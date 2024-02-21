@@ -50,9 +50,11 @@
     <main>
       <div class="main-gradient"></div>
       <section class="container-lg p-0 text-center">
-        <h1 data-i18n="form_title" class=""></h1>
-        <p data-i18n="form_description" class=""></p>
-        <p data-i18n="form_sub_desc" class=""></p>
+        <div class="form__title--cont pb-3 mx-auto">
+          <h1 data-i18n="form_title" class="form__title fw-m mb-2"></h1>
+          <p data-i18n="form_description" class="form__description mb-2"></p>
+          <p data-i18n="form_sub_desc" class="form__description"></p>
+        </div>
         <form action="" class="px-2 p-sm-4">
           <div class="form-floating mb-3">
             <input type="text" class="form-control" id="name" placeholder="" />
@@ -134,7 +136,7 @@
           </div>
 
           <div class="select__container mb-3">
-            <select class="select2  w-100" data-i18n="role_in_bisiness">
+            <select class="select2 w-100" data-i18n="role_in_bisiness">
               <option value=""></option>
               <option data-i18n="investor" value="Інвестор"></option>
               <option
@@ -167,7 +169,6 @@
             </select>
           </div>
 
-
           <div class="form-floating mb-3">
             <input
               type="text"
@@ -178,11 +179,15 @@
             <label for="working" data-i18n="working"></label>
           </div>
 
-          <div class="form-floating mb-3">
-            <textarea class="form-control" placeholder="" id="experiance" style="height: 100px"></textarea>
-            <label data-i18n="experiance"  for="experiance"></label>
+          <div class="big-textarea form-floating mb-3">
+            <textarea
+              class="form-control"
+              placeholder=""
+              id="experiance"
+              style="height: 100px"
+            ></textarea>
+            <label data-i18n="experiance" for="experiance"></label>
           </div>
-
 
           <div class="form-floating mb-3">
             <input
@@ -191,16 +196,29 @@
               id="experiance_franchise"
               placeholder=""
             />
-            <label for="experiance_franchise" data-i18n="experiance_franchise"></label>
+            <label
+              for="experiance_franchise"
+              data-i18n="experiance_franchise"
+            ></label>
           </div>
 
           <div class="form-floating mb-3">
-            <textarea class="form-control" placeholder="" id="franchise_why" style="height: 100px"></textarea>
-            <label data-i18n="franchise_why"  for="franchise_why"></label>
+            <textarea
+              class="form-control"
+              placeholder=""
+              id="franchise_why"
+              style="height: 100px"
+            ></textarea>
+            <label data-i18n="franchise_why" for="franchise_why"></label>
           </div>
           <div class="form-floating mb-3">
-            <textarea class="form-control" placeholder="" id="expectation" style="height: 100px"></textarea>
-            <label data-i18n="expectation"  for="expectation"></label>
+            <textarea
+              class="form-control"
+              placeholder=""
+              id="expectation"
+              style="height: 100px"
+            ></textarea>
+            <label data-i18n="expectation" for="expectation"></label>
           </div>
 
           <div class="form-floating mb-3">
@@ -210,7 +228,10 @@
               id="how_find_franchise"
               placeholder=""
             />
-            <label for="how_find_franchise" data-i18n="how_find_franchise"></label>
+            <label
+              for="how_find_franchise"
+              data-i18n="how_find_franchise"
+            ></label>
           </div>
 
           <div class="form-floating mb-3">
@@ -224,15 +245,29 @@
           </div>
 
           <div class="form-floating mb-3">
-            <textarea class="form-control" placeholder="" id="why_bh" style="height: 100px"></textarea>
-            <label data-i18n="why_bh"  for="why_bh"></label>
+            <textarea
+              class="form-control"
+              placeholder=""
+              id="why_bh"
+              style="height: 100px"
+            ></textarea>
+            <label data-i18n="why_bh" for="why_bh"></label>
           </div>
-          <div class="form-floating mb-3">
-            <textarea class="form-control" placeholder="" id="about_yourself" style="height: 100px"></textarea>
-            <label data-i18n="about_yourself"  for="about_yourself"></label>
+          <div class="big-textarea form-floating mb-4">
+            <textarea
+              class="form-control"
+              placeholder=""
+              id="about_yourself"
+              style="height: 100px"
+            ></textarea>
+            <label data-i18n="about_yourself" for="about_yourself"></label>
           </div>
 
-
+          <div class="mb-3">
+            <button type="button" class="form__submit shadow fw-m">
+              <span data-i18n="send"></span>
+            </button>
+          </div>
         </form>
       </section>
     </main>
