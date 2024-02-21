@@ -98,10 +98,10 @@
 }
 
 .btn__to-form {
-  padding: 0 15px;
+  padding: 3px 15px;
   background-color: #fff;
   width: 160px;
-  height: 40px;
+  
   position: absolute;
   bottom: 8px;
   z-index: 1;
@@ -109,6 +109,8 @@
   border: 1px solid #000;
   transform: translateX(130%);
   font-size: 8px;
+  /* height: 40px; */
+  line-height: 16px;
   transition: all 0.3s ease;
 }
 
