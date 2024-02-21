@@ -3,3 +3,6 @@
 @import url('./navbar.css'); 
 @import url('./form-elements.css');
 @import url('./form.css');
+@import url('./ask-modal.css');
+@import url('./thanks-modal.css');
+@import url('./animation.css');
