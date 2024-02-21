@@ -1,4 +1,132 @@
 {
   "language": "ua",
-  "role_in_bisiness":"Рrrrrrrr"
+  "about": "about us",
+  "franchise_package": "franchise package",
+  "faq": "faq",
+  "franchise_form": "franchise form",
+
+  "banner_text": "Life is too </br> short, </br> to drink </br> bad coffee",
+
+  "about_description": "is a network of coffee shops with its own roasting coffee. But people don't just come here for coffee. Some call it atmosphere, ritual, we say it's a way of life.",
+  "about_bh1": "Black Honey started as a coffee roasting brand specifically for coffee shops: single-origin 100% Arabica premium and specialty class and wholesale format. </br></br> And then we thought: why not present our product in our own coffee shop. So since 2016, we've opened <span class='text-decoration-line-through'>9</span> 10 (see how quickly we're growing) establishments in three cities of Ukraine.</br> And 6 of them are franchises.",
+  "about_bh2": "Satisfied visitors who become regulars are of course our main reward, but if formalities are important to someone, among our achievements: </br> - Top-100 coffee shops in Ukraine 2020 </br> - Top-10 coffee roasting brands in Ukraine 2020 </br> - Eco-approach of the year 2020 </br> - repeated finalist of the 'Salt' award",
+  "about_bh3": "Currently, the Black Honey network has everything it needs: its own certified production, a confectionery workshop that provides coffee shops with author's desserts, as well as a training base where we share our knowledge and experience. So joining us is very simple.",
+
+  "link_to_form": "Fill out the franchise form",
+
+  "chart_title": "We don't impose our coffee tastes,</br> because the tastiest ones are already chosen",
+  "amount_quests": "Number of Black Honey guests",
+
+  "in_city": "can be in your city!",
+
+  "lviv": "Lviv",
+
+  "kryva": "Kryva Lypa passage, 3",
+  "shota": "Shota Rustaveli St., 12 Business Hub",
+  "galytska": "Halytska St., 20",
+  "shevchenka": "Shevchenka St., 60/9 RC Semitsvit",
+  "laz": "Stryiska St., 45 LAZ",
+  "british": "Shevchenka St., 27 RC Great Britain",
+  "parus": "Kulparivska St., 93. k2 RC Parus CITY",
+  "persenkivka": "Persenkivka St., 19. Raw",
+  "yaneva": "Yaneva St., 29 RC America",
+
+  "khmelnytsky": "Khmelnytsky",
+
+  "khemln": "Proskurivska St., 45",
+
+  "suport_frans": "support before and after cafe launch",
+  "suport_title": "Support before </br> cafe launch",
+
+  "franch_sup_b1_1": "Approval of premises.",
+  "franch_sup_b1_2": "Individual calculation of planned investments, financial model forecast, and payback period.",
+  "franch_sup_b1_3": "Cafe design project.",
+  "franch_sup_b1_4": "Author's supervision and support of repair work.",
+  "franch_sup_b1_5": "Consultation on all issues related to business opening and management.",
+  "franch_sup_b1_6": "Marketing/PR/HR/IT support before opening.",
+  "franch_sup_b1_7": "Franchise package with company standards and all necessary documents for work and business management.",
+  "franch_sup_b1_8": "Organization of supply and provision of all goods and products for cafe opening.",
+
+  "suport_title_2": "permanent </br> cafe support",
+
+  "franch_sup_b2_1": "Marketing/PR/HR/IT/technical support.",
+  "franch_sup_b2_2": "Operational support of the support manager.",
+  "franch_sup_b2_3": "Analysis of financial and operational performance indicators.",
+  "franch_sup_b2_4": "Systematic control of product, goods, service quality, compliance with network standards.",
+  "franch_sup_b2_5": "Compliance with company values and corporate culture.",
+
+  "common_questions": "Answering common questions",
+
+  "didnt_required_info": "Didn't receive the required information?",
+  "ask": "ask",
+
+  "question_1": "What is the payback period of investments?",
+  "answer_1": "It all depends on the area, premises, its condition, agreements with the landlord, and other factors that affect the size of investments. On average, the payback period is 24 months.",
+
+  "question_2": "What is the size of the initial contribution? What is included in the cost of the initial contribution?",
+  "answer_2": "The size of the initial contribution is calculated individually and is 10% of the investment amount. It includes all expenses related to the entry of a new establishment into the Black Honey network and the work of the launch team.",
+
+  "question_3": "What is the total amount of investments needed to start? What does it consist of?",
+  "answer_3": "The amount of investments starts from 25,000 euros and on average is 1,000-1,500 euros per 1 sq m. It all depends on the condition of the premises and agreements with the landlord.",
+
+  "question_4": "Will I pay royalties? In what amount and how often?",
+  "answer_4": "Royalties are 2% of the revenue and are paid monthly, starting from the period specified in the Concession Agreement (discussed individually).",
+
+  "question_5": "Are there any additional payments?",
+  "answer_5": "A marketing monthly payment of 1% of the revenue, but not less than 5000 UAH, starting from the second month after opening.",
+
+  "question_6": "For how many years is the franchise agreement signed?",
+  "answer_6": "For 5 years.",
+
+  "question_7": "How long does the business opening/launch period take?",
+  "answer_7": "It all depends on the condition of the premises and the complexity of the project. On average, 6 months from signing the Agreement to opening.",
+
+  "form_title": "Franchisee</br> potential form",
+  "form_description": "Hello! Let's start our story.</br>But first, we need to get to know each other better!",
+  "form_sub_desc": "Please fill out the form and tell us more about yourself!",
+  "name": "Your full name: <span class='star'>*</span>",
+  "birthdate": "Date of birth:",
+  "tel": "Contact phone:",
+  "email": "Email:",
+  "insta": "Instagram account (direct link): <span class='star'>*</span>",
+  "education": "What is your education?",
+  "city_live": "Which city do you live in?",
+  "city_plan": "In which city do you plan to open Black Honey: <span class='star'>*</span>",
+  "initial_capital": "Size of initial capital (investment in the project): <span class='star'>*</span>",
+  "source_of_investment": "Source of investment?",
+  "role_in_bisiness": "Role in the business?",
+  "investor": "Investor",
+  "investor_manager": "Investor and Manager",
+  "manager": "Manager",
+
+  "share_in_bisiness": "Share in the business? <span class='star'>*</span>",
+
+  "form_ownership_place": "Planned ownership form of the premises? <span class='star'>*</span>",
+  "own": "Own",
+  "rent": "Rent",
+
+  "working": "Are you currently employed? <span class='star'>*</span>",
+  "experiance": "In which areas have you worked? What is your experience</br> in project/team management?",
+  "experiance_franchise": "Do you have experience in franchising? <span class='star'>*</span>",
+  "franchise_why": "Why did you choose franchising?",
+  "expectation": "What are your expectations from buying Black Honey franchise?",
+  "how_find_franchise": "How did you find out about the franchise? <span class='star'>*</span>",
+  "other_franchise": "What other franchises are you considering?",
+  "why_bh": "Why Black Honey?",
+  "about_yourself": "Tell us about yourself, anything you think</br> will help us better understand your values:",
+
+  "send": "send",
+  "write": "write",
+  "question": "Question",
+  "name_m": "Name: <span class='star'>*</span>",
+  "tel_m": "Phone: <span class='star'>*</span>",
+  "email_m": "E-mail: <span class='star'>*</span>",
+  "send_m": "send",
+
+  "thanks": "Thank you for filling out the form",
+  "steps_title": "After filling out the form, we have several negotiation stages planned:",
+  "step_1": "1. Interview with the franchisee.",
+  "step_2": "2. Signing the Deposit Agreement and its payment.",
+  "step_3": "3. Calculation of the investment budget and forecast of the business model of the future cafe.",
+  "step_4": "4. Signing the contract and payment of the initial (franchise) fee under the Deposit Agreement. Forecast of the business model of the future cafe."
 }
