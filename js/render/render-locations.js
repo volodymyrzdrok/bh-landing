@@ -1,7 +1,7 @@
-import { locations } from "./db/locations.js";
-import { markupLocations } from "./markup/markup-locations.js";
-import { markupModalLocations } from "./markup/markup-modal-locations.js";
-import { updateContent } from "./utils/updateLocalization.js";
+import { locations } from "../db/locations.js";
+import { markupLocations } from "../markup/markup-locations.js";
+import { markupModalLocations } from "../markup/markup-modal-locations.js";
+import { updateContent } from "../utils/updateLocalization.js";
 
 $(document).ready(function () {
   const containerLocations = $(".location__list");
