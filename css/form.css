@@ -13,7 +13,7 @@
 
 .select2-container .select2-selection--single {
   height: 58px !important;
-  width: 100%;
+  width: 100% !important;
   position: relative;
 }
 
@@ -39,7 +39,7 @@
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #000 !important;
 }
-@media (min-width: 768px) {
+@media (min-width: 922px) {
     .select2-container--default .select2-selection--single .select2-selection__placeholder {
         color: #000 !important;
     }
