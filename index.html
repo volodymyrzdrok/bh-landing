@@ -117,8 +117,8 @@
             <a
               href="./form.html"
               class="btn__to-form d-flex align-items-center justify-content-center shadow text-center fw-m"
-             
-            > <span  data-i18n="link_to_form"></span>
+            >
+              <span data-i18n="link_to_form"></span>
             </a>
           </div>
         </div>
@@ -178,7 +178,10 @@
 
       <section>
         <!-- franchise block -->
-        <div class="text-center franchise-title__container mx-auto" id="franchise_package">
+        <div
+          class="text-center franchise-title__container mx-auto"
+          id="franchise_package"
+        >
           <h2 class="franchise-title fw-m" data-i18n="franchise_package"></h2>
           <img
             src="images/main_logo.svg"
@@ -204,8 +207,8 @@
               <a
                 href="./form.html"
                 class="fr-btn__to-form d-flex align-items-center justify-content-center shadow text-center fw-m"
-               
-              > <span  data-i18n="link_to_form"></span>
+              >
+                <span data-i18n="link_to_form"></span>
               </a>
 
               <div class="d-lg-flex justify-content-between">
@@ -264,8 +267,8 @@
               <a
                 href="./form.html"
                 class="fr-btn__to-form d-flex align-items-center justify-content-center shadow text-center fw-m"
-               
-              > <span  data-i18n="link_to_form"></span>
+              >
+                <span data-i18n="link_to_form"></span>
               </a>
 
               <div class="d-lg-flex justify-content-between">
@@ -300,7 +303,7 @@
       </section>
       <div class="main-gradient" id="faq"></div>
 
-      <section class="question-section mx-auto py-4" >
+      <section class="question-section mx-auto py-4">
         <div class="d-lg-flex">
           <div
             class="col-lg-5 question-block__title-cont d-lg-flex flex-column justify-content-between"
@@ -311,7 +314,11 @@
             ></h2>
             <div class="d-none d-lg-block">
               <p class="answer__title fw-m" data-i18n="didnt_required_info"></p>
-              <a class="answer__desk fw-m" data-i18n="ask"></a>
+              <a
+                data-modaltitle="ask"
+                class="answer__desk fw-m open-modal-ask"
+                data-i18n="ask"
+              ></a>
             </div>
           </div>
           <div class="col-lg-7">
@@ -368,7 +375,11 @@
         </div>
         <div class="d-block d-lg-none pt-3 text-center">
           <p class="answer__title fw-m" data-i18n="didnt_required_info"></p>
-          <a class="answer__desk fw-m" data-i18n="ask"></a>
+          <a
+            data-modaltitle="ask"
+            class="answer__desk fw-m open-modal-ask"
+            data-i18n="ask"
+          ></a>
         </div>
       </section>
       <div class="main-gradient"></div>
@@ -393,8 +404,104 @@
             class="m-0 p-0 border-0 shadow-none locModal__btn-close"
             data-bs-dismiss="modal"
             aria-label="Close"
-          >  </button>
+          ></button>
           <div id="locations-modal__container"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal ASK -->
+    <div
+      class="modal fade"
+      id="askModal"
+      tabindex="-1"
+      aria-labelledby="askModal"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-md"
+        style="max-width: 600px"
+      >
+        <div class="modal-content rounded-0 p-4">
+          <button
+            type="button"
+            class="m-0 p-0 border-0 shadow-none askModal__btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+
+          <div class="d-flex mb-4 ps-2">
+            <div class="">
+              <img
+                src="images/cup-black.svg"
+                class="ask__cup cups-dance-1"
+                alt="pin"
+              />
+              <img
+                src="images/cup-black.svg"
+                class="ask__cup cups-dance-2"
+                alt="pin"
+              />
+              <img
+                src="images/cup-black.svg"
+                class="ask__cup cups-dance-3"
+                alt="pin"
+              />
+            </div>
+            <div
+              class="w-100 d-flex justify-content-center align-items-center pe-4"
+            >
+              <h3 class="ask-modal__title fw-m"></h3>
+            </div>
+          </div>
+
+          <form action="">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="name_m"
+                placeholder=""
+                required
+              />
+              <label for="name_m" data-i18n="name_m"></label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="tel"
+                class="form-control"
+                id="tel_m"
+                placeholder=""
+                required
+              />
+              <label for="tel_m" data-i18n="tel_m"></label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email_m"
+                placeholder=""
+                required
+              />
+              <label for="email_m" data-i18n="email_m"></label>
+            </div>
+            <div class="form-floating mb-4">
+              <textarea
+                class="form-control"
+                placeholder=""
+                id="question"
+                style="height: 100px"
+              ></textarea>
+              <label data-i18n="question" for="question"></label>
+            </div>
+
+            <div class="mb-3 text-center">
+              <button type="submit" class="form__submit shadow fw-m">
+                <span data-i18n="send_m"></span>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
