@@ -31,8 +31,8 @@ const handleSubmit = (event) => {
   const formData = new FormData(myForm);
   let text = "";
   for (var pair of formData.entries()) {
-    //         console.log(pair[0] + ': ' + pair[1]);
-    text += pair[0] + ": " + pair[1];
+            console.log(pair[0] + ': ' + pair[1]);
+    // text += pair[0] + ": " + pair[1];
   }
 
   console.log(
@@ -53,10 +53,6 @@ const handleSubmit = (event) => {
 };
 
 document
-  .querySelector('form[name="form_question"]')
+  .querySelector('form[name="contact"]')
   .addEventListener("submit", handleSubmit);
 
-
-//   form-name=form_question&user_name=%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80+%D0%97%D0%B4%D1%80%D0%BE%D0%BA&user_telephone=%2B380637274024&user_email=vovavova44%40gmail.com&user_question=767676786
-
-// 767676786
