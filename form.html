@@ -347,7 +347,7 @@
     </div>
 
     <!-- Modal ASK -->
-    <!-- <div
+    <div
       class="modal fade"
       id="askModal"
       tabindex="-1"
@@ -391,7 +391,7 @@
             </div>
           </div>
 
-          <form name="form_question" method="POST" data-netlify="true">
+          <!-- <form name="form_question" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="form_question" />
 
             <div class="form-floating mb-3">
@@ -439,43 +439,42 @@
                 <span data-i18n="send_m"></span>
               </button>
             </div>
+          </form> -->
+
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+
+            <p>
+              <label>
+                <input type="text" id="name_m" required name="user_name"
+              /></label>
+            </p>
+            <p>
+              <label>
+                <input type="tel" id="tel_m" required name="user_telephone"
+              /></label>
+            </p>
+            <p>
+              <label>
+                <input type="email" id="email_m" required name="user_email"
+              /></label>
+            </p>
+            <p>
+              <label
+                >Message:
+                <textarea
+                  id="question"
+                  style="height: 100px"
+                  name="user_question"
+                ></textarea>
+              </label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
           </form>
         </div>
       </div>
-    </div> -->
-
-
-
-    <form name="contact" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact">
-
-      <p>
-        <label> <input  type="text"
-                id="name_m"
-       
-                required name="user_name" /></label>
-      </p>
-      <p>
-        <label> <input  type="tel"
-                id="tel_m"
-               
-                required  name="user_telephone" /></label>
-      </p>
-    <p>
-        <label> <input  type="email"
-                id="email_m"
-               
-                required  name="user_email" /></label>
-      </p>
-      <p>
-        <label>Message: <textarea 
-                id="question"
-                style="height: 100px"
- name="user_question"></textarea></label>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form>
+    </div>
   </body>
 </html>
