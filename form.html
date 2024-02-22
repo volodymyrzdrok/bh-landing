@@ -395,8 +395,26 @@
 
           <form name="form_question" method="POST" data-netlify="true" 
           >
-          <input type="hidden" name="form-name" value="form_question">
+          <input type="hidden" name="form-name" value="contact">
 
+          <p>
+            <label>Your Name: <input type="text" name="name_&_surname" /></label>
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email_bo_tu_pidar" /></label>
+          </p>
+          <p>
+            <label>Your Role: <select name="role[]_in_company" multiple>
+              <option value="leader">Leader</option>
+              <option value="follower">Follower</option>
+            </select></label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+         
+
+          <!-- ====== -->
             <p class="form-floating mb-3">
               <input
              
