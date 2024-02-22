@@ -7,6 +7,4 @@ import "./chart.js";
 import "./utils/animations.js";
 import "./navbar.js";
 import "./utils/modal-ask.js"
-import "./forms.js"
-
-
+import "./forms.js";
