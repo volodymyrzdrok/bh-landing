@@ -393,9 +393,10 @@
             </div>
           </div>
 
-          <form action="">
+          <form method="POST" name="form_for_question" data-netlify="true" id="askModal-form" >
             <div class="form-floating mb-3">
               <input
+              name="name"
                 type="text"
                 class="form-control"
                 id="name_m"
@@ -406,6 +407,7 @@
             </div>
             <div class="form-floating mb-3">
               <input
+              name="tel"
                 type="tel"
                 class="form-control"
                 id="tel_m"
@@ -416,6 +418,7 @@
             </div>
             <div class="form-floating mb-3">
               <input
+              name="email"
                 type="email"
                 class="form-control"
                 id="email_m"
@@ -426,6 +429,7 @@
             </div>
             <div class="form-floating mb-4">
               <textarea
+              name="question"
                 class="form-control"
                 placeholder=""
                 id="question"
