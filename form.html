@@ -349,7 +349,7 @@
 
 
       <!-- Modal ASK -->
-      <!-- <div
+      <div
       class="modal fade"
       id="askModal"
       tabindex="-1"
@@ -393,13 +393,13 @@
             </div>
           </div>
 
-          <form action="/" method="POST" name="form_for_question" netlify id="askModal-form" 
+          <form name="form_question" method="POST" data-netlify="true" id="askModal-form" 
           >
-     
+          <input type="hidden" name="form-name" value="form_question">
 
             <div class="form-floating mb-3">
               <input
-              name="name_m_q"
+              name="user_name"
                 type="text"
                 class="form-control"
                 id="name_m"
@@ -410,7 +410,7 @@
             </div>
             <div class="form-floating mb-3">
               <input
-              name="tel_m_q"
+              name="user_telephone"
                 type="tel"
                 class="form-control"
                 id="tel_m"
@@ -421,7 +421,7 @@
             </div>
             <div class="form-floating mb-3">
               <input
-              name="email_m_q"
+              name="user_email"
                 type="email"
                 class="form-control"
                 id="email_m"
@@ -432,7 +432,7 @@
             </div>
             <div class="form-floating mb-4">
               <textarea
-              name="question_m_q"
+              name="user_question"
                 class="form-control"
                 placeholder=""
                 id="question"
@@ -449,10 +449,10 @@
           </form>
         </div>
       </div>
-    </div> -->
+    </div>
 
 
-    <form name="contact" method="POST" data-netlify="true">
+    <!-- <form name="contact" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="contact">
 
       <p>
@@ -468,12 +468,12 @@
         </select></label>
       </p>
       <p>
-        <label>Message: <textarea name="message_nahui"></textarea></label>
+        <label>Message: <textarea name="message"></textarea></label>
       </p>
       <p>
         <button type="submit">Send</button>
       </p>
-    </form>
+    </form> -->
     
 
 

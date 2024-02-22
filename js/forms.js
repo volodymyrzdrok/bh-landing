@@ -43,6 +43,6 @@ const handleSubmit = (event) => {
   };
   
   document
-    .querySelector("form")
+    .querySelector("#askModal-form")
     .addEventListener("submit", handleSubmit);
   
