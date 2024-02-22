@@ -33,18 +33,20 @@ const handleSubmit = (event) => {
   for (var pair of formData.entries()) {
     //         console.log(pair[0] + ': ' + pair[1]);
     text += pair[0] + ": " + pair[1];
-    
   }
 
-  console.log('text.toString() :', text.toString())
+  console.log(
+    "new URLSearchParams(formData).toString(),",
+    new URLSearchParams(formData).toString()
+  );
   fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: text.toString(),
+    body: new URLSearchParams(formData).toString(),
   })
     .then(() => {
       console.log("Form successfully submitted");
-      $('#askModal').modal('hide')
+      $("#askModal").modal("hide");
       $("#thanksModal").modal("show");
     })
     .catch((error) => alert(error));
