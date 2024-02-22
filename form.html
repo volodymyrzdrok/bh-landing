@@ -393,11 +393,16 @@
             </div>
           </div>
 
-          <form method="POST" name="form_for_question" data-netlify="true" id="askModal-form" >
-            <input type="hidden" name="form-name" value="form_for_question" /> 
+          <form method="POST" name="form_for_question" data-netlify="true" id="askModal-form" netlify-honeypot="bot-field"
+          >
+          <p class="hidden">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
             <div class="form-floating mb-3">
               <input
-              name="name"
+              name="name_m"
                 type="text"
                 class="form-control"
                 id="name_m"
@@ -408,7 +413,7 @@
             </div>
             <div class="form-floating mb-3">
               <input
-              name="tel"
+              name="tel_m"
                 type="tel"
                 class="form-control"
                 id="tel_m"
@@ -419,7 +424,7 @@
             </div>
             <div class="form-floating mb-3">
               <input
-              name="email"
+              name="email_m"
                 type="email"
                 class="form-control"
                 id="email_m"
@@ -430,7 +435,7 @@
             </div>
             <div class="form-floating mb-4">
               <textarea
-              name="question"
+              name="question_m"
                 class="form-control"
                 placeholder=""
                 id="question"
