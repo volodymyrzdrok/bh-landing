@@ -55,7 +55,7 @@
           <p data-i18n="form_description" class="form__description mb-2"></p>
           <p data-i18n="form_sub_desc" class="form__description"></p>
         </div>
-        <form action="" class="px-2 p-sm-4">
+        <!-- <form action="" class="px-2 p-sm-4">
           <div class="form-floating mb-3">
             <input
               type="text"
@@ -286,7 +286,7 @@
               <span data-i18n="send"></span>
             </button>
           </div>
-        </form>
+        </form> -->
       </section>
     </main>
     <div class="main-gradient"></div>
@@ -349,7 +349,7 @@
 
 
       <!-- Modal ASK -->
-      <div
+      <!-- <div
       class="modal fade"
       id="askModal"
       tabindex="-1"
@@ -449,7 +449,34 @@
           </form>
         </div>
       </div>
-    </div>
+    </div> -->
+
+
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+
+      <p>
+        <label>Your Name: <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Your Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Your Role: <select name="role[]" multiple>
+          <option value="leader">Leader</option>
+          <option value="follower">Follower</option>
+        </select></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+    
+
+
 
   </body>
 </html>
