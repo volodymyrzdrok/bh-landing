@@ -395,27 +395,9 @@
 
           <form name="form_question" method="POST" data-netlify="true" 
           >
-          <input type="hidden" name="form-name" value="contact">
+          <input type="hidden" name="form-name" value="form_question">
 
-          <p>
-            <label>Your Name: <input type="text" name="name_&_surname" /></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email_bo_tu_pidar" /></label>
-          </p>
-          <p>
-            <label>Your Role: <select name="role[]_in_company" multiple>
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
-            </select></label>
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-         
-
-          <!-- ====== -->
-            <p class="form-floating mb-3">
+            <div class="form-floating mb-3">
               <input
              
                 type="text"
@@ -427,8 +409,8 @@
                 name="user_name"
               />
               <label for="name_m" data-i18n="name_m"></label>
-            </p>
-            <p class="form-floating mb-3">
+            </div>
+            <div class="form-floating mb-3">
               <input
               
                 type="tel"
@@ -440,8 +422,8 @@
                 name="user_telephone"
               />
               <label for="tel_m" data-i18n="tel_m"></label>
-            </p>
-            <p class="form-floating mb-3">
+            </div>
+            <div class="form-floating mb-3">
               <input
             
                 type="email"
@@ -452,8 +434,8 @@
                 name="user_email"
               />
               <label for="email_m" data-i18n="email_m"></label>
-            </p>
-            <p class="form-floating mb-4">
+            </div>
+            <div class="form-floating mb-4">
               <textarea
       
                 class="form-control"
@@ -464,7 +446,7 @@
                 name="user_question"
               ></textarea>
               <label data-i18n="question" for="question"></label>
-            </p>
+            </div>
 
             <div class="mb-3 text-center">
               <button type="submit" class="form__submit shadow fw-m">
