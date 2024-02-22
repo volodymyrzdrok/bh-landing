@@ -56,3 +56,7 @@ document
   .querySelector('form[name="contact"]')
   .addEventListener("submit", handleSubmit);
 
+  document
+  .querySelector('form[name="form"]')
+  .addEventListener("submit", handleSubmit);
+

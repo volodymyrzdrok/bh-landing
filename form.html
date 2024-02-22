@@ -55,7 +55,8 @@
           <p data-i18n="form_description" class="form__description mb-2"></p>
           <p data-i18n="form_sub_desc" class="form__description"></p>
         </div>
-        <!-- <form action="" class="px-2 p-sm-4">
+        <form name="form" method="POST" data-netlify="true" class="px-2 p-sm-4">
+          <input type="hidden" name="form-name" value="form" />
           <div class="form-floating mb-3">
             <input
               type="text"
@@ -63,6 +64,7 @@
               id="name"
               placeholder=""
               required
+              name="name_and_surname"
             />
             <label for="name" data-i18n="name"></label>
           </div>
@@ -72,11 +74,18 @@
               class="form-control"
               id="birthdate"
               placeholder=""
+              name="day_of_birth"
             />
             <label for="birthdate" data-i18n="birthdate"></label>
           </div>
           <div class="form-floating mb-3">
-            <input type="tel" class="form-control" id="tel" placeholder="" />
+            <input
+              type="tel"
+              class="form-control"
+              id="tel"
+              placeholder=""
+              name="phone_number"
+            />
             <label for="tel" data-i18n="tel"></label>
           </div>
           <div class="form-floating mb-3">
@@ -85,6 +94,7 @@
               class="form-control"
               id="email"
               placeholder=""
+              name="contact_email"
             />
             <label for="email" data-i18n="email"></label>
           </div>
@@ -95,6 +105,7 @@
               id="insta"
               placeholder=""
               required
+              name="link_to_instagram"
             />
             <label for="insta" data-i18n="insta"></label>
           </div>
@@ -104,6 +115,7 @@
               class="form-control"
               id="education"
               placeholder=""
+              name="place_of_education"
             />
             <label for="education" data-i18n="education"></label>
           </div>
@@ -113,6 +125,7 @@
               class="form-control"
               id="city_live"
               placeholder=""
+              name="place_of_life"
             />
             <label for="city_live" data-i18n="city_live"></label>
           </div>
@@ -123,6 +136,7 @@
               id="city_plan"
               placeholder=""
               required
+              name="city_open_cafe"
             />
             <label for="city_plan" data-i18n="city_plan"></label>
           </div>
@@ -133,6 +147,7 @@
               id="initial_capital"
               placeholder=""
               required
+              name="amount_of_initial_capital"
             />
             <label for="initial_capital" data-i18n="initial_capital"></label>
           </div>
@@ -142,6 +157,7 @@
               class="form-control"
               id="source_of_investment"
               placeholder=""
+              name="resource_of_investment"
             />
             <label
               for="source_of_investment"
@@ -150,7 +166,11 @@
           </div>
 
           <div class="select__container mb-3">
-            <select class="select2 w-100" data-i18n="role_in_bisiness">
+            <select
+              class="select2 w-100"
+              data-i18n="role_in_bisiness"
+              name="role"
+            >
               <option value=""></option>
               <option data-i18n="investor" value="Інвестор"></option>
               <option
@@ -168,6 +188,7 @@
               id="share_in_bisiness"
               placeholder=""
               required
+              name="part_in_bisiness"
             />
             <label
               for="share_in_bisiness"
@@ -176,7 +197,11 @@
           </div>
 
           <div class="select__container mb-3">
-            <select class="select2 w-100" data-i18n="form_ownership_place">
+            <select
+              class="select2 w-100"
+              data-i18n="form_ownership_place"
+              name="type_ownership_place"
+            >
               <option value=""></option>
 
               <option data-i18n="rent" value="Оренда"></option>
@@ -191,6 +216,7 @@
               id="working"
               placeholder=""
               required
+              name="are_you_working"
             />
             <label for="working" data-i18n="working"></label>
           </div>
@@ -201,6 +227,7 @@
               placeholder=""
               id="experiance"
               style="height: 100px"
+              name="experiance_in_work"
             ></textarea>
             <label data-i18n="experiance" for="experiance"></label>
           </div>
@@ -212,6 +239,7 @@
               id="experiance_franchise"
               placeholder=""
               required
+              name="experiance_in_franchise"
             />
             <label
               for="experiance_franchise"
@@ -225,6 +253,7 @@
               placeholder=""
               id="franchise_why"
               style="height: 100px"
+              name="why_franchise"
             ></textarea>
             <label data-i18n="franchise_why" for="franchise_why"></label>
           </div>
@@ -234,6 +263,7 @@
               placeholder=""
               id="expectation"
               style="height: 100px"
+              name="expectation_from_franchise"
             ></textarea>
             <label data-i18n="expectation" for="expectation"></label>
           </div>
@@ -245,6 +275,7 @@
               id="how_find_franchise"
               placeholder=""
               required
+              name="how_find_our_franchise"
             />
             <label
               for="how_find_franchise"
@@ -258,6 +289,7 @@
               class="form-control"
               id="other_franchise"
               placeholder=""
+              name="other_franchise_considering"
             />
             <label for="other_franchise" data-i18n="other_franchise"></label>
           </div>
@@ -268,6 +300,7 @@
               placeholder=""
               id="why_bh"
               style="height: 100px"
+              name="why_black_honey"
             ></textarea>
             <label data-i18n="why_bh" for="why_bh"></label>
           </div>
@@ -277,6 +310,7 @@
               placeholder=""
               id="about_yourself"
               style="height: 100px"
+              name="tell_about_yourself"
             ></textarea>
             <label data-i18n="about_yourself" for="about_yourself"></label>
           </div>
@@ -286,7 +320,7 @@
               <span data-i18n="send"></span>
             </button>
           </div>
-        </form> -->
+        </form>
       </section>
     </main>
     <div class="main-gradient"></div>
@@ -402,7 +436,7 @@
                 required
                 name="user_name"
               />
-              <label  data-i18n="name_m"></label>
+              <label data-i18n="name_m"></label>
             </div>
             <div class="form-floating mb-3">
               <input
@@ -412,7 +446,7 @@
                 required
                 name="user_telephone"
               />
-              <label  data-i18n="tel_m"></label>
+              <label data-i18n="tel_m"></label>
             </div>
             <div class="form-floating mb-3">
               <input
@@ -431,7 +465,7 @@
                 style="height: 100px"
                 name="user_question"
               ></textarea>
-              <label data-i18n="question" ></label>
+              <label data-i18n="question"></label>
             </div>
 
             <div class="mb-3 text-center">
@@ -439,39 +473,7 @@
                 <span data-i18n="send_m"></span>
               </button>
             </div>
-          </form> 
-
-          <!-- <form name="contact" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact" />
-
-            <div>
-             
-                <input type="text" id="name_m" required name="user_name"
-              />  <label></label>
-            </div>
-            <div>
-            
-                <input type="tel" id="tel_m" required name="user_telephone"
-              />   <label></label>
-            </div>
-            <div>
-          
-                <input type="email" id="email_m" required name="user_email"
-              /> <label></label>
-            </div>
-            <div>
-             
-                <textarea
-                  id="question"
-                  style="height: 100px"
-                  name="user_question"
-                ></textarea>
-                <label></label>
-            </div>
-            <div>
-              <button type="submit">Send</button>
-            </div>
-          </form> -->
+          </form>
         </div>
       </div>
     </div>
