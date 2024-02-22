@@ -346,10 +346,8 @@
       </div>
     </div>
 
-
-
-      <!-- Modal ASK -->
-      <div
+    <!-- Modal ASK -->
+    <div
       class="modal fade"
       id="askModal"
       tabindex="-1"
@@ -393,43 +391,34 @@
             </div>
           </div>
 
-          <form name="form_question" method="POST" data-netlify="true" 
-          >
-          <input type="hidden" name="form-name" value="form_question">
+          <form name="form_question" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="form_question" />
 
-            <div class="form-floating mb-3">
+            <!-- <div class="form-floating mb-3">
               <input
-             
-                type="text"
                 class="form-control"
+                type="text"
                 id="name_m"
-       
                 required
-
                 name="user_name"
               />
               <label for="name_m" data-i18n="name_m"></label>
             </div>
             <div class="form-floating mb-3">
               <input
-              
-                type="tel"
                 class="form-control"
+                type="tel"
                 id="tel_m"
-               
                 required
-
                 name="user_telephone"
               />
               <label for="tel_m" data-i18n="tel_m"></label>
             </div>
             <div class="form-floating mb-3">
               <input
-            
-                type="email"
                 class="form-control"
+                type="email"
                 id="email_m"
-               
                 required
                 name="user_email"
               />
@@ -437,16 +426,39 @@
             </div>
             <div class="form-floating mb-4">
               <textarea
-      
                 class="form-control"
-        
                 id="question"
                 style="height: 100px"
-
                 name="user_question"
               ></textarea>
               <label data-i18n="question" for="question"></label>
-            </div>
+            </div> -->
+
+            <p>
+              <label>
+                <input type="text" id="name_m" required name="user_name"
+              /></label>
+            </p>
+            <p>
+              <label>
+                <input type="tel" id="tel_m" required name="user_telephone"
+              /></label>
+            </p>
+            <p>
+              <label>
+                <input type="email" id="email_m" required name="user_email"
+              /></label>
+            </p>
+            <p>
+              <label
+                >Message:
+                <textarea
+                  id="question"
+                  style="height: 100px"
+                  name="user_question"
+                ></textarea>
+              </label>
+            </p>
 
             <div class="mb-3 text-center">
               <button type="submit" class="form__submit shadow fw-m">
@@ -458,32 +470,36 @@
       </div>
     </div>
 
-
     <!-- <form name="contact" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="contact">
 
       <p>
-        <label>Your Name: <input type="text" name="name_&_surname" /></label>
+        <label> <input  type="text"
+                id="name_m"
+       
+                required name="user_name" /></label>
       </p>
       <p>
-        <label>Your Email: <input type="email" name="email_bo_tu_pidar" /></label>
+        <label> <input  type="tel"
+                id="tel_m"
+               
+                required  name="user_telephone" /></label>
+      </p>
+    <p>
+        <label> <input  type="email"
+                id="email_m"
+               
+                required  name="user_email" /></label>
       </p>
       <p>
-        <label>Your Role: <select name="role[]_in_company" multiple>
-          <option value="leader">Leader</option>
-          <option value="follower">Follower</option>
-        </select></label>
-      </p>
-      <p>
-        <label>Message: <textarea name="message"></textarea></label>
+        <label>Message: <textarea 
+                id="question"
+                style="height: 100px"
+ name="user_question"></textarea></label>
       </p>
       <p>
         <button type="submit">Send</button>
       </p>
     </form> -->
-    
-
-
-
   </body>
 </html>
