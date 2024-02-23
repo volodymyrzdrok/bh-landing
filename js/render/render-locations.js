@@ -5,9 +5,8 @@ import { updateContent } from "../utils/updateLocalization.js";
 
 $(document).ready(function () {
   const containerLocations = $(".location__list");
-  if (containerLocations) {
-    containerLocations.html(markupLocations(locations));
-  }
+
+  containerLocations.html(markupLocations(locations));
 
   //modal
 
@@ -18,6 +17,7 @@ $(document).ready(function () {
 
     $("#locations-modal__container").html(markupModalLocations(address));
 
+    $(".locModal-content__item").hide();
     $(".locModal-name__item:first").addClass("active");
     $(".locModal-content__item:first").show();
 
@@ -42,5 +42,11 @@ $(document).ready(function () {
 
     updateContent();
     $("#locationModal").modal("show");
+
+    $("#locationModal").on("shown.bs.modal", function () {
+      var textsHeight = $(".locModal-content__item:first").height();
+
+      $(".locModal-content__item").css("height", textsHeight);
+    });
   });
 });

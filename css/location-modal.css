@@ -1,6 +1,6 @@
-.locModal-content__item {
+/* .locModal-content__item {
   display: none;
-}
+} */
 
 .locModal-name__item {
   display: inline-block;
@@ -52,8 +52,6 @@
   }
 }
 
-
-
 /* ============= */
 
 .locModal__btn-close {
@@ -80,4 +78,17 @@
 
 .locModal__btn-close::before {
   transform: rotate(-45deg);
+}
+
+.locModal-content img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.locModal-content__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
