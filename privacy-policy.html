@@ -39,8 +39,8 @@
   </head>
   <body>
     <header></header>
+    <div class="main-gradient"></div>
     <main>
-      <div class="main-gradient"></div>
      
     </main>
     <div class="main-gradient"></div>
@@ -49,5 +49,154 @@
   
 
 
+
+
+      <!-- Modal ASK -->
+      <div
+      class="modal fade"
+      id="askModal"
+      tabindex="-1"
+      aria-labelledby="askModal"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-md"
+        style="max-width: 600px"
+      >
+        <div class="modal-content rounded-0 p-4">
+          <button
+            type="button"
+            class="m-0 p-0 border-0 shadow-none askModal__btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+
+          <div class="d-flex mb-4 ps-2">
+            <div class="">
+              <img
+                src="images/cup-black.svg"
+                class="ask__cup cups-dance-1"
+                alt="pin"
+              />
+              <img
+                src="images/cup-black.svg"
+                class="ask__cup cups-dance-2"
+                alt="pin"
+              />
+              <img
+                src="images/cup-black.svg"
+                class="ask__cup cups-dance-3"
+                alt="pin"
+              />
+            </div>
+            <div
+              class="w-100 d-flex justify-content-center align-items-center pe-4"
+            >
+              <h3 class="ask-modal__title fw-m"></h3>
+            </div>
+          </div>
+
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+
+            <div class="form-floating mb-3">
+              <input
+                class="form-control"
+                type="text"
+                id="name_m"
+                required
+                name="user_name"
+              />
+              <label data-i18n="name_m"></label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                class="form-control"
+                type="tel"
+                id="tel_m"
+                required
+                name="user_telephone"
+              />
+              <label data-i18n="tel_m"></label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                class="form-control"
+                type="email"
+                id="email_m"
+                required
+                name="user_email"
+              />
+              <label data-i18n="email_m"></label>
+            </div>
+            <div class="form-floating mb-4">
+              <textarea
+                class="form-control"
+                id="question"
+                style="height: 100px"
+                name="user_question"
+              ></textarea>
+              <label data-i18n="question"></label>
+            </div>
+
+            <div class="mb-3 text-center">
+              <button type="submit" class="form__submit shadow fw-m">
+                <span data-i18n="send_m"></span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+     <!-- Modal Sent -->
+   <div
+   class="modal fade"
+   id="sentModal"
+   tabindex="-1"
+   aria-labelledby="sentModal"
+   aria-hidden="true"
+ >
+   <div
+     class="modal-dialog modal-dialog-centered modal-sm"
+     style="max-width: 450px"
+   >
+     <div class="modal-content rounded-0 p-4">
+       <button
+         type="button"
+         class="m-0 p-0 border-0 shadow-none askModal__btn-close"
+         data-bs-dismiss="modal"
+         aria-label="Close"
+       ></button>
+
+       <div class="d-flex mb-4 gap-4 ps-2">
+         <div class="">
+           <img
+             src="images/cup-black.svg"
+             class="ask__cup cups-dance-1"
+             alt="pin"
+           />
+           <img
+             src="images/cup-black.svg"
+             class="ask__cup cups-dance-2"
+             alt="pin"
+           />
+           <img
+             src="images/cup-black.svg"
+             class="ask__cup cups-dance-3"
+             alt="pin"
+           />
+         </div>
+         <div class="d-flex justify-content-center align-items-center pe-4">
+           <h3 class="thanks-modal__title fw-m" data-i18n="question_sent"></h3>
+         </div>
+       </div>
+
+     
+     </div>
+   </div>
+ </div>
   </body>
 </html>
