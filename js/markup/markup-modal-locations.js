@@ -11,7 +11,7 @@ export function markupModalLocations(data) {
           id,
           name,
           url,
-        }) => `<a class="locModal-name__item" href="https://maps.app.goo.gl/${url}" target="_blank" data-target=${id} data-i18n=${name}>
+        }) => `<a class="locModal-name__item" data-href="https://maps.app.goo.gl/${url}"  data-target=${id} data-i18n=${name}>
     
   </a>`
       )

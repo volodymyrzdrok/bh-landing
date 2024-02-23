@@ -21,7 +21,7 @@ $(document).ready(function () {
     $(".locModal-name__item:first").addClass("active");
     $(".locModal-content__item:first").show();
 
-    $(".locModal-name__item").hover(function () {
+    $(".locModal-name__item").on("mouseenter touchstart", function () {
       var targetId = $(this).data("target");
       $(".locModal-content__item").hide();
       $(".locModal-content__item[data-id='" + targetId + "']").show();
@@ -29,12 +29,18 @@ $(document).ready(function () {
       $(this).addClass("active");
     });
 
-  
-    updateContent()
+    $(".locModal-name__item").on("click", function (e) {
+      e.preventDefault();
+      var href = $(this).attr("data-href");
+      window.open(href, "_blank");
+    });
+
+    $(".locModal-name__item").on("touchstart", function (e) {
+      var href = $(this).attr("data-href");
+      window.open(href, "_blank");
+    });
+
+    updateContent();
     $("#locationModal").modal("show");
   });
-
-
-
- 
 });
