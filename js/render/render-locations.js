@@ -17,13 +17,18 @@ $(document).ready(function () {
 
     $("#locations-modal__container").html(markupModalLocations(address));
 
-    $(".locModal-content__item").hide();
     $(".locModal-name__item:first").addClass("active");
     $(".locModal-content__item:first").show();
+    $(".locModal-content__item:first img").addClass("active-img");
 
     $(".locModal-name__item").on("mouseenter touchstart", function () {
       var targetId = $(this).data("target");
       $(".locModal-content__item").hide();
+      $(".locModal-content__item img").removeClass("active-img");
+
+      $(".locModal-content__item[data-id='" + targetId + "'] img").addClass(
+        "active-img"
+      );
       $(".locModal-content__item[data-id='" + targetId + "']").show();
       $(".locModal-name__item").removeClass("active");
       $(this).addClass("active");
