@@ -23,6 +23,11 @@
 /* footer */
 
 @media (max-width: 575px) {
+.foot-pp__container{
+  max-width: 90px;
+  line-height: 10px !important;
+}
+  
   .column-mob {
     writing-mode: tb-rl;
     transform: scale(-1);
