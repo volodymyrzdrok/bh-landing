@@ -86,7 +86,7 @@
   "education": "Яка у вас освіта?",
   "city_live": "В якому місті ви проживаєте?",
   "city_plan": "В якому місті плануєте відкрити Black Honey: <span class='star'>*</span>",
-  "initial_capital": "Розмір початкового капіталу (інвестиція в проект): <span class='star'>*</span>",
+  "initial_capital": "Розмір почат. капіталу (інвестиція в проект): <span class='star'>*</span>",
   "source_of_investment": "Джерело інвестування?",
 
   "role_in_bisiness": "Роль в бізнесі?",
@@ -101,7 +101,7 @@
   "rent": "Оренда",
 
   "working": "На даний час ви працюєте? <span class='star'>*</span>",
-  "experiance": "У яких сферах ви працювали? Який ваш досвід</br> керування проектами/командами?",
+  "experiance": "У яких сферах ви працювали? Який ваш </br> досвід керування проектами/командами?",
   "experiance_franchise": "Чи є у вас досвід в франчайзингу? <span class='star'>*</span>",
   "franchise_why": "Чому саме обрали франчайзинг?",
   "expectation": "Які ваші очікування від купівлі </br> франшизи Black Honey?",
