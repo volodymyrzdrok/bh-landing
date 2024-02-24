@@ -6,6 +6,7 @@
 }
 .locModal-content__item:first-child {
   display: block; 
+  height: auto;
 }
 
 .locModal-name__item {
