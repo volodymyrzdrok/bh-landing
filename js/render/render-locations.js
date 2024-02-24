@@ -8,41 +8,63 @@ $(document).ready(function () {
 
   containerLocations.html(markupLocations(locations));
 
+  // Modal
+
   $(".location__item").click(function (e) {
     const id = $(this).data("id");
+
     const address = locations.find((el) => el.id == id);
+
     $("#locations-modal__container").html(markupModalLocations(address));
 
     $(".locModal-name__item:first").addClass("active");
     $(".locModal-content__item:first img").addClass("active-img");
 
     $(".locModal-name__item").on("mouseenter touchstart", function () {
-      const targetId = $(this).data("target");
+      var targetId = $(this).data("target");
       $(".locModal-content__item").hide();
-      $(`.locModal-content__item[data-id="${targetId}"]`).show();
       $(".locModal-content__item img").removeClass("active-img");
-      $(`.locModal-content__item[data-id="${targetId}"] img`).addClass("active-img");
+
+      $(".locModal-content__item[data-id='" + targetId + "'] img").addClass(
+        "active-img"
+      );
+      $(".locModal-content__item[data-id='" + targetId + "']").show();
       $(".locModal-name__item").removeClass("active");
       $(this).addClass("active");
     });
 
-    $(".locModal-name__item").on("click touchstart", function (e) {
-      e.preventDefault();
-      const href = $(this).attr("data-href");
-      window.open(href, "_blank");
+    let clickedOnce = false;
+    $(".locModal-name__item").on("click touchend", function (e) {
+      // Перевіряємо, чи це тач-пристрій
+      const isTouchDevice = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+    
+      if (isTouchDevice) {
+        // Якщо це тач-пристрій, чекаємо на подвійний клік
+        if (!clickedOnce) {
+          clickedOnce = true;
+          setTimeout(() => {
+            clickedOnce = false;
+          }, 500); // Задаємо час для подвійного кліка (500 мс)
+        } else {
+          // Якщо спрацьовує подвійний клік, відкриваємо посилання
+          const href = $(this).attr("data-href");
+          window.open(href, "_blank");
+          clickedOnce = false;
+        }
+      } else {
+        // Якщо це не тач-пристрій, відкриваємо посилання одразу
+        const href = $(this).attr("data-href");
+        window.open(href, "_blank");
+      }
     });
 
     updateContent();
     $("#locationModal").modal("show");
-
   });
 
-
-
-
   $("#locationModal").on("shown.bs.modal", function () {
-    const textsHeight = $(".locModal-content__item:first").height();
+    var textsHeight = $(".locModal-content__item:first").height();
+
     $(".locModal-content__item").css("height", textsHeight);
   });
 });
-
