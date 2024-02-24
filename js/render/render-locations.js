@@ -8,49 +8,41 @@ $(document).ready(function () {
 
   containerLocations.html(markupLocations(locations));
 
-  //modal
-
   $(".location__item").click(function (e) {
     const id = $(this).data("id");
-
     const address = locations.find((el) => el.id == id);
-
     $("#locations-modal__container").html(markupModalLocations(address));
 
     $(".locModal-name__item:first").addClass("active");
     $(".locModal-content__item:first img").addClass("active-img");
 
     $(".locModal-name__item").on("mouseenter touchstart", function () {
-      var targetId = $(this).data("target");
+      const targetId = $(this).data("target");
       $(".locModal-content__item").hide();
+      $(`.locModal-content__item[data-id="${targetId}"]`).show();
       $(".locModal-content__item img").removeClass("active-img");
-
-      $(".locModal-content__item[data-id='" + targetId + "'] img").addClass(
-        "active-img"
-      );
-      $(".locModal-content__item[data-id='" + targetId + "']").show();
+      $(`.locModal-content__item[data-id="${targetId}"] img`).addClass("active-img");
       $(".locModal-name__item").removeClass("active");
       $(this).addClass("active");
     });
 
-    $(".locModal-name__item").on("click", function (e) {
+    $(".locModal-name__item").on("click touchstart", function (e) {
       e.preventDefault();
-      var href = $(this).attr("data-href");
-      window.open(href, "_blank");
-    });
-
-    $(".locModal-name__item").on("touchstart", function (e) {
-      var href = $(this).attr("data-href");
+      const href = $(this).attr("data-href");
       window.open(href, "_blank");
     });
 
     updateContent();
     $("#locationModal").modal("show");
 
-    $("#locationModal").on("shown.bs.modal", function () {
-      var textsHeight = $(".locModal-content__item:first").height();
+  });
 
-      $(".locModal-content__item").css("height", textsHeight);
-    });
+
+
+
+  $("#locationModal").on("shown.bs.modal", function () {
+    const textsHeight = $(".locModal-content__item:first").height();
+    $(".locModal-content__item").css("height", textsHeight);
   });
 });
+

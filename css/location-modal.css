@@ -1,8 +1,11 @@
 .locModal-content__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: none;
 }
 .locModal-content__item:first-child {
-  display: block;
+  display: block; 
 }
 
 .locModal-name__item {
@@ -89,3 +92,4 @@
   max-width: 100%;
   min-height: 100%;
 }
+
