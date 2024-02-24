@@ -1,7 +1,7 @@
 .locModal-content__item {
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   display: none;
 }
 .locModal-content__item:first-child {
