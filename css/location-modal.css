@@ -1,6 +1,9 @@
 .locModal-content__item {
   display: none;
 }
+.locModal-content__item:first-child {
+  display: block;
+}
 
 .locModal-name__item {
   display: inline-block;

@@ -18,7 +18,6 @@ $(document).ready(function () {
     $("#locations-modal__container").html(markupModalLocations(address));
 
     $(".locModal-name__item:first").addClass("active");
-    $(".locModal-content__item:first").show();
     $(".locModal-content__item:first img").addClass("active-img");
 
     $(".locModal-name__item").on("mouseenter touchstart", function () {
