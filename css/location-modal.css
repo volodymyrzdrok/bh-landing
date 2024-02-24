@@ -6,7 +6,7 @@
 }
 .locModal-content__item:first-child {
   display: block; 
-  height: auto;
+  height: 100%;
 }
 
 .locModal-name__item {
