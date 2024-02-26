@@ -60,8 +60,6 @@ $(document).ready(function () {
   });
 
   $("#locationModal").on("shown.bs.modal", function () {
-    var textsHeight = $(".locModal-content__item:first").height();
-
-    $(".locModal-content__item").css("height", textsHeight);
+ 
   });
 });
