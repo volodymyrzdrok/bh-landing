@@ -35,24 +35,21 @@ $(document).ready(function () {
 
     let clickedOnce = false;
     $(".locModal-name__item").on("click touchend", function (e) {
-      // Перевіряємо, чи це тач-пристрій
-      const isTouchDevice = 'ontouchstart' in window || navigator.msMaxTouchPoints;
-    
+      const isTouchDevice =
+        "ontouchstart" in window || navigator.msMaxTouchPoints;
+
       if (isTouchDevice) {
-        // Якщо це тач-пристрій, чекаємо на подвійний клік
         if (!clickedOnce) {
           clickedOnce = true;
           setTimeout(() => {
             clickedOnce = false;
-          }, 500); // Задаємо час для подвійного кліка (500 мс)
+          }, 500);
         } else {
-          // Якщо спрацьовує подвійний клік, відкриваємо посилання
           const href = $(this).attr("data-href");
           window.open(href, "_blank");
           clickedOnce = false;
         }
       } else {
-        // Якщо це не тач-пристрій, відкриваємо посилання одразу
         const href = $(this).attr("data-href");
         window.open(href, "_blank");
       }

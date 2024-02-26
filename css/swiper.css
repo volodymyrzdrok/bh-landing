@@ -32,7 +32,7 @@
 
 .swiper-slide__cont {
   width: 280px;
-  height: 171px;
+  height: 189px;
   margin-left: 24px;
   padding: 8px;
   background-color: #fff;
@@ -45,7 +45,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .swiper-slide__cont {
     width: 490px;
-    height: 440px;
+    height: 380px;
     padding: 20px;
     margin-left: 44px;
   }
@@ -58,12 +58,12 @@
 @media (min-width: 992px) {
   .swiper-slide__cont {
     width: 770px;
-    height: 640px;
+    height: 540px;
     padding: 30px;
     margin-left: 70px;
   }
   .swiper-slide__cont p {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 45px;
   }
 }
@@ -103,13 +103,12 @@
   width: 160px;
   
   position: absolute;
-  bottom: 8px;
+  bottom: 3px;
   z-index: 1;
   text-transform: uppercase;
   border: 1px solid #000;
   transform: translateX(130%);
   font-size: 8px;
-  /* height: 40px; */
   line-height: 16px;
   transition: all 0.3s ease;
 }
@@ -126,7 +125,7 @@
     padding: 0 45px;
     width: 360px;
     height: 80px;
-    bottom: 114px;
+    bottom: 164px;
     transform: translateX(120%);
     font-size: 16px;
     line-height: 22px;
@@ -135,7 +134,7 @@
 
 @media (min-width: 992px) {
   .btn__to-form {
-    bottom: 34px;
+    bottom: 84px;
     transform: translateX(160%);
   }
 }

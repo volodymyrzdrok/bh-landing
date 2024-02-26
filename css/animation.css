@@ -39,19 +39,13 @@
 
 @keyframes pendulum-3 {
   0% {
-    transform: translateY(0px) rotate(20deg);
+    transform: translateY(8px) rotate(20deg);
   }
   50% {
-    transform: translateY(0px) rotate(-5deg);
+    transform: translateY(8px) rotate(-5deg);
   }
   100% {
-    transform: translateY(0px) rotate(20deg);
+    transform: translateY(8px) rotate(20deg);
   }
 }
 
-.animate__hinge {
-  display: inline-block;
-  margin: 0 0.5rem;
-
-  animation: bounce 10s;
-}
