@@ -10,6 +10,7 @@
 }
 
 .franchise-title__logo {
+   display: none;
   width: 200px;
   margin: 0 auto 8px auto;
 }
@@ -21,27 +22,27 @@
 
 @media (min-width: 768px) {
   .franchise-title__container {
-    padding: 110px 0;
+    padding: 90px 0;
   }
   .franchise-title {
     font-size: 40px;
     line-height: 50px;
-    margin-bottom: 29px;
+    margin-bottom: 5px;
   }
   .franchise-title__logo {
-    width: 700px;
+    width: 500px;
     margin-bottom: 18px;
   }
   .franchise-title__description {
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 25px;
+    line-height: 25px;
   }
 }
 
 @media (min-width: 992px) {
   .franchise-title {
-    font-size: 70px;
-    line-height: 90px;
+    font-size: 60px;
+    line-height: 80px;
   }
 }
 
@@ -93,8 +94,8 @@
     height: 32px;
   }
   .about_franchise__title {
-    font-size: 60px;
-    line-height: 70px;
+        font-size: 40px;
+        line-height: 45px;
   }
 }
 
@@ -137,8 +138,8 @@
     margin-bottom: 70px;
   }
   .franch-supp__item {
-    font-size: 30px;
-    line-height: 35px;
+  font-size: 25px;
+  line-height: 25px;
   }
   .franch-supp__item:not(:last-child) {
     margin-bottom: 30px;

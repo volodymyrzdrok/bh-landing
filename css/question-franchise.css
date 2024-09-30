@@ -71,8 +71,8 @@
   }
   .question__item {
     padding: 12px 12px 12px 40px;
-    font-size: 30px;
-    line-height: 36px;
+ font-size: 25px;
+        line-height: 25px;
   }
   .question__item::before {
     top: 27px;
@@ -83,8 +83,8 @@
 
   .answer__item,
   .answer__title {
-    font-size: 25px;
-    line-height: 30px;
+font-size: 25px;
+        line-height: 25px;
   }
   .answer__item {
     padding: 18px 12px 0px 12px;

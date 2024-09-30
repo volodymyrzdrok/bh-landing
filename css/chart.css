@@ -26,8 +26,8 @@
 
 @media (min-width: 768px) {
   .chart__container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+     padding-top: 100px;
+    padding-bottom: 100px; 
   }
 
   .chart__title {
@@ -36,14 +36,28 @@
   }
 
   .chart-subtitle {
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 16px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: 992px) {
   .chart-subtitle {
-    font-size: 30px;
-    line-height: 60px;
+    font-size: 25px;
+    line-height: 40px;
   }
 }
+
+@media (min-width: 1251px) {
+  .chart__container {
+    padding: 100px 
+  }
+
+    .chart-subtitle {
+  text-align: center !important;
+ 
+  }
+}
+
+
+

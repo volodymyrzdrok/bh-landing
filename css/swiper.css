@@ -57,14 +57,14 @@
 
 @media (min-width: 992px) {
   .swiper-slide__cont {
-    width: 770px;
-    height: 540px;
-    padding: 30px;
+    width: 600px;
+    height: 450px;
+    padding: 35px;
     margin-left: 70px;
   }
   .swiper-slide__cont p {
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 
@@ -135,13 +135,13 @@
 @media (min-width: 992px) {
   .btn__to-form {
     bottom: 84px;
-    transform: translateX(160%);
+    transform: translateX(140%);
   }
 }
 
 @media (min-width: 1111px) {
   .btn__to-form {
-    transform: translateX(210%);
+    transform: translate(165%, -62%);
     font-size: 18px;
     line-height: 25px;
   }

@@ -14,9 +14,9 @@ export const locations = [
       { id: "9", name: "yaneva", url: "https://www.google.com/maps/place/Black+Honey/@49.8109506,24.0093778,15z/data=!4m6!3m5!1s0x473ae7f42b0ff401:0xe2516af3b8d1f056!8m2!3d49.8109506!4d24.0093778!16s%2Fg%2F11vdfgqhd3?hl=uk&entry=ttu" },
     ],
   },
-  {
-    id: "2",
-    city: "khmelnytsky",
-    address: [{ id: "1", name: "khemln", url: "https://www.google.com/maps/place/Black+Honey/@49.4233568,26.9845006,17z/data=!3m1!4b1!4m6!3m5!1s0x473207cfec606573:0x60814cd08652829d!8m2!3d49.4233533!4d26.9870755!16s%2Fg%2F11h_4sgkxk?hl=uk-UK&entry=ttu" }],
-  },
+  // {
+  //   id: "2",
+  //   city: "khmelnytsky",
+  //   address: [{ id: "1", name: "khemln", url: "https://www.google.com/maps/place/Black+Honey/@49.4233568,26.9845006,17z/data=!3m1!4b1!4m6!3m5!1s0x473207cfec606573:0x60814cd08652829d!8m2!3d49.4233533!4d26.9870755!16s%2Fg%2F11h_4sgkxk?hl=uk-UK&entry=ttu" }],
+  // },
 ];
