@@ -11,7 +11,7 @@ export const locations = [
       { id: "6", name: "british", url: "https://www.google.com/maps/place/Black+Honey/@49.8432493,24.0061576,15z/data=!4m6!3m5!1s0x473add975b9bd3f9:0x3a9e374484549497!8m2!3d49.8432493!4d24.0061576!16s%2Fg%2F11vdf5vftj?hl=uk&entry=ttu" },
       { id: "7", name: "parus", url: "https://www.google.com/maps/place/49%C2%B049'19.4%22N+23%C2%B059'32.7%22E/@49.8220556,23.9924167,17z/data=!3m1!4b1!4m4!3m3!8m2!3d49.8220556!4d23.9924167?hl=uk-UA&entry=ttu" },
       { id: "8", name: "persenkivka", url: "https://www.google.com/maps/place/RAW+STUDIOS+LVIV/@49.8081073,24.0360911,15z/data=!4m2!3m1!1s0x0:0x938a817e94add361?sa=X&ved=2ahUKEwj4i5zWz8GEAxXfCBAIHbCXCNcQ_BJ6BAgPEAA" },
-      { id: "9", name: "yaneva", url: "https://www.google.com/maps/place/Black+Honey/@49.8109506,24.0093778,15z/data=!4m6!3m5!1s0x473ae7f42b0ff401:0xe2516af3b8d1f056!8m2!3d49.8109506!4d24.0093778!16s%2Fg%2F11vdfgqhd3?hl=uk&entry=ttu" },
+      // { id: "9", name: "yaneva", url: "https://www.google.com/maps/place/Black+Honey/@49.8109506,24.0093778,15z/data=!4m6!3m5!1s0x473ae7f42b0ff401:0xe2516af3b8d1f056!8m2!3d49.8109506!4d24.0093778!16s%2Fg%2F11vdfgqhd3?hl=uk&entry=ttu" },
     ],
   },
   // {
